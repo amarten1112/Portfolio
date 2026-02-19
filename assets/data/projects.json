@@ -1,0 +1,292 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Typography",
+      "type": "print-design",
+      "featured": true,
+      "year": 2023,
+      "client": "Academic Project",
+      "description": "Concept for magazine article layouts",
+      "longDescription": "Concept for two print layouts of a magazine article. The concept called for two distinct two-page layouts with images, title and subtitle. There was a requirement for at least one call out in each piece.",
+      "challenge": "Creating two distinct but cohesive magazine article layouts that incorporate images, titles, subtitles, and callouts effectively.",
+      "solution": "Developed two separate design approaches with distinct visual hierarchy, strategic image placement, and prominent callout elements that draw reader attention.",
+      "results": [
+        "Two professional magazine layouts",
+        "Effective visual hierarchy",
+        "Strategic image integration",
+        "Professional typographic treatment"
+      ],
+      "tools": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
+      "timeline": "Academic project",
+      "teamSize": 1
+    },
+    {
+      "id": 2,
+      "title": "Desktop Publishing",
+      "type": "print-design",
+      "featured": true,
+      "year": 2023,
+      "client": "Restaurant Concept",
+      "description": "Concept for Print Menu and Brochure",
+      "longDescription": "Concept to create a print layout of a restaurant menu and brochure that appeals to high-end clientele and includes insights into their culture while delivering on the promise of creativity, conversation, and quality.",
+      "challenge": "Designing premium restaurant materials that communicate upscale positioning while effectively presenting menu information and brand culture.",
+      "solution": "Developed sophisticated print design incorporating premium aesthetics, clear hierarchy for menu navigation, cultural storytelling elements, and brand-consistent visual language.",
+      "results": [
+        "Premium menu and brochure design",
+        "Effective high-end brand positioning",
+        "Clear information hierarchy",
+        "Cultural brand integration"
+      ],
+      "tools": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
+      "timeline": "Academic project",
+      "teamSize": 1
+    },
+    {
+      "id": 3,
+      "title": "Digital Publishing",
+      "type": "digital-design",
+      "featured": true,
+      "year": 2023,
+      "client": "Magazine Publisher",
+      "description": "Concept for a Digital Magazine - EPUB",
+      "longDescription": "Concept for a digital version of a magazine in the form of an EPUB in fixed layout that will target men over the age of 35 with the goal of increasing those viewers while maintaining or increasing the loyal readers. The concept calls for a digital version of the magazine that is entertaining with interactive elements that tie to the articles, visually appealing while keeping with their brand and easy to navigate.",
+      "challenge": "Creating an engaging digital magazine experience that attracts new male readers 35+ while retaining existing loyal subscribers, with interactive elements and brand consistency.",
+      "solution": "Designed interactive EPUB layout with compelling visual design, integrated interactive elements tied to article content, maintained brand aesthetic, and optimized navigation for digital reading experience.",
+      "results": [
+        "Interactive EPUB design",
+        "Target demographic engagement",
+        "Brand consistency maintained",
+        "Enhanced reader experience"
+      ],
+      "tools": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
+      "timeline": "Academic project",
+      "teamSize": 1
+    },
+    {
+      "id": 4,
+      "title": "Graphics & Layout",
+      "type": "branding",
+      "featured": false,
+      "year": 2023,
+      "client": "Branding Project",
+      "description": "Concept for Logo and Branding",
+      "longDescription": "Concept to create a logo and brand identity for a client, taking into consideration the needs and requirements of the client as well as applying the psychology of design to communicate the message you intend to the client's audience.",
+      "challenge": "Creating a distinctive logo and brand identity that strategically communicates client values using design psychology principles.",
+      "solution": "Conducted brand research, applied design psychology principles, and developed a logo and brand system that effectively communicates to target audience.",
+      "results": [
+        "Professional logo design",
+        "Brand psychology application",
+        "Effective audience communication",
+        "Complete brand system"
+      ],
+      "tools": ["Adobe Illustrator", "Adobe Photoshop"],
+      "timeline": "Academic project",
+      "teamSize": 1
+    },
+    {
+      "id": 5,
+      "title": "Branding",
+      "type": "branding",
+      "featured": false,
+      "year": 2023,
+      "client": "Branding Project",
+      "description": "Concept for a Logo with Branding",
+      "longDescription": "Concept to create a logo and brand identity for a client, taking into consideration the needs and requirements of the client as well as applying the psychology of design to communicate the message you intend to the client's audience.",
+      "challenge": "Developing a comprehensive brand identity that reflects client needs and communicates effectively through design psychology.",
+      "solution": "Created strategic logo design and brand identity system incorporating client requirements and design psychology principles for target audience connection.",
+      "results": [
+        "Cohesive brand identity",
+        "Strategic logo design",
+        "Effective brand communication",
+        "Professional brand system"
+      ],
+      "tools": ["Adobe Illustrator", "Adobe Photoshop"],
+      "timeline": "Academic project",
+      "teamSize": 1
+    },
+    {
+      "id": 6,
+      "title": "Logo Design Layout",
+      "type": "branding",
+      "featured": false,
+      "year": 2023,
+      "client": "Logo Design Project",
+      "description": "Concept for a logo",
+      "longDescription": "Concept to create a logo and brand identity for a client, taking into consideration the needs and requirements of the client as well as applying the psychology of design to communicate the message you intend to the client's audience.",
+      "challenge": "Designing a versatile logo that works across multiple applications while using design psychology to communicate brand message.",
+      "solution": "Developed flexible logo design and brand identity incorporating design psychology and client requirements, applicable across print and digital media.",
+      "results": [
+        "Versatile logo design",
+        "Multi-application branding",
+        "Design psychology integrated",
+        "Professional brand identity"
+      ],
+      "tools": ["Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign"],
+      "timeline": "Academic project",
+      "teamSize": 1
+    },
+    {
+      "id": 7,
+      "title": "Digital Imaging",
+      "type": "digital-design",
+      "featured": false,
+      "year": 2023,
+      "client": "Adventure Sports",
+      "description": "Concepts for a Digital Ad",
+      "longDescription": "My aim was to create a visually appealing and cohesive piece, which involved careful consideration of color, shape, balance, unity, and emphasis. I maintained consistency in messaging and colors to ensure that the design was cohesive across different media. Overall, I incorporated a background image that reflects the location where the adventure sports activities could take place.",
+      "challenge": "Creating visually cohesive digital advertisements for adventure sports with location-specific storytelling and consistent visual language.",
+      "solution": "Designed compelling digital ads emphasizing color psychology, visual balance, and unity through consistent messaging and imagery. Incorporated location-reflective backgrounds to enhance adventure sports narrative.",
+      "results": [
+        "Professional digital ads",
+        "Strong visual cohesion",
+        "Location-specific storytelling",
+        "Consistent brand messaging"
+      ],
+      "tools": ["Adobe Photoshop", "Adobe Illustrator"],
+      "timeline": "Academic project",
+      "teamSize": 1
+    },
+    {
+      "id": 8,
+      "title": "Digital Graphic Design for Website",
+      "type": "web-design",
+      "featured": false,
+      "year": 2023,
+      "client": "Restaurant",
+      "description": "Concept for a Restaurant Website",
+      "longDescription": "The concept is to create a brand that appeals to high-end clientele and includes insights into their culture while delivering on the promise of creativity, conversation, and quality. The overall display and layout was consistent with the concept. It is an image-heavy site that is interactive and uses fonts, colors and the logo from the Client. The site is responsive and the navigation is intuitive and easy to use.",
+      "challenge": "Designing a premium restaurant website that communicates upscale positioning while being image-heavy, interactive, responsive, and user-friendly.",
+      "solution": "Developed premium web design with strong visual hierarchy, strategic image use, client branding integration, interactive elements, and responsive layout ensuring intuitive navigation on all devices.",
+      "results": [
+        "Premium website design",
+        "Responsive across devices",
+        "Strong visual branding",
+        "Intuitive navigation system"
+      ],
+      "tools": ["Dreamweaver", "Adobe Photoshop", "Adobe Illustrator"],
+      "timeline": "Academic project",
+      "teamSize": 1
+    },
+    {
+      "id": 9,
+      "title": "Advanced Digital Graphic Design",
+      "type": "web-design",
+      "featured": false,
+      "year": 2023,
+      "client": "Portfolio Project",
+      "description": "Concept to create a UX Branding Portfolio Website",
+      "longDescription": "The concept is to apply the principles of User Experience and KIS guidelines to a portfolio website. The concept calls for a website that is attractive, intuitive, and easy to navigate.",
+      "challenge": "Creating a portfolio website that demonstrates UX expertise through application of user experience principles and Keep It Simple (KIS) guidelines.",
+      "solution": "Designed portfolio site implementing UX best practices, minimalist aesthetic, clear information hierarchy, intuitive navigation, and accessible design that showcases UX methodology.",
+      "results": [
+        "Professional portfolio site",
+        "UX principles demonstrated",
+        "Minimalist design approach",
+        "Excellent usability"
+      ],
+      "tools": ["Dreamweaver", "Adobe Illustrator", "Adobe Photoshop", "Bootstrap"],
+      "timeline": "Academic project",
+      "teamSize": 1
+    },
+    {
+      "id": 10,
+      "title": "Advanced Multiplatform Design",
+      "type": "web-development",
+      "featured": false,
+      "year": 2023,
+      "client": "Outdoor Adventure Store",
+      "description": "Concept for an Outdoor Adventure Store with UI/UX",
+      "longDescription": "The concept is to design a website to ensure the visitor sees a consistent experience when visiting the site on different devices. The images, hierarchy and navigation will be consistent across the devices. Visitors will be able to share and access information between designs with no additional steps needed. Images, text and forms will be consistent over all the devices to provide a familiarity and comfort for the visitor. Visibility will be an important element to pay attention to by ensuring the images resize correctly and that the fonts will be visible and easy to read on smaller devices.",
+      "challenge": "Designing a responsive website ensuring consistent user experience, visual hierarchy, navigation, and form interactions across desktop, tablet, and mobile devices.",
+      "solution": "Developed comprehensive responsive design with consistent layout across devices, optimized images for various resolutions, readable typography at all sizes, and seamless cross-device navigation.",
+      "results": [
+        "Consistent cross-device experience",
+        "Responsive image optimization",
+        "Readable typography on all screens",
+        "Seamless device transitions"
+      ],
+      "tools": ["Dreamweaver", "Adobe Photoshop", "Adobe Illustrator", "Figma", "Bootstrap"],
+      "timeline": "Academic project",
+      "teamSize": 1
+    },
+    {
+      "id": 11,
+      "title": "UI/UX Case Study",
+      "type": "web-development",
+      "featured": true,
+      "year": 2023,
+      "client": "Restaurant Website Redesign",
+      "description": "Website Case Study with User Research and Personas",
+      "longDescription": "The concept is for a website redesign and to create a user-friendly and visually appealing website that reflects the restaurant's brand identity. The new website should provide customers with easy access to information about the restaurant, including menus, hours of operation, location, and contact information. Additionally, the website needs to integrate an online ordering system that allows customers to place orders for pickup or delivery.",
+      "challenge": "Redesigning a restaurant website to improve user experience, address mobile issues, clarify menu presentation, and integrate online ordering while maintaining brand identity.",
+      "solution": "Conducted user research creating three detailed personas (Dan, John, Gabby), mapped user journeys, identified pain points, redesigned information architecture with web-optimized menus, integrated online ordering system, and optimized mobile experience.",
+      "results": [
+        "User-centered redesign approach",
+        "Three detailed user personas",
+        "Improved information hierarchy",
+        "Mobile-optimized experience",
+        "Online ordering integration"
+      ],
+      "tools": ["Figma", "Adobe Photoshop", "Adobe Illustrator"],
+      "timeline": "Academic project",
+      "teamSize": 1,
+      "userPersonas": [
+        {
+          "name": "Dan",
+          "age": 35,
+          "title": "Lawyer",
+          "location": "Duluth, MN",
+          "family": "Married with 2 children",
+          "motivation": "Loves to explore local restaurants and eateries",
+          "values": "Family-owned small businesses, quality food with fresh ingredients",
+          "painPoints": "Finds it difficult to find restaurants with quality food, hard to coordinate meals for family, no nutrition/allergen info on menus",
+          "goals": "Find high-quality meals with fresh ingredients, easy reservation access, easy phone access"
+        },
+        {
+          "name": "John",
+          "age": 32,
+          "title": "Accountant",
+          "location": "Superior, WI",
+          "family": "Engaged",
+          "motivation": "Love of food and need for break from everyday life",
+          "values": "Quality food, good atmosphere, supporting local businesses",
+          "painPoints": "Difficult to find quality restaurants, hard to coordinate meals with friends and fiance, website navigation issues, PDF menus on mobile",
+          "goals": "Find nice restaurant with quality food and atmosphere, easy reservations, online menu access"
+        },
+        {
+          "name": "Gabby",
+          "age": 25,
+          "title": "Graphic Designer",
+          "location": "Duluth, MN",
+          "family": "Single",
+          "motivation": "Curiosity to try new things, love of food, social media presence",
+          "values": "Unique experiences, visual appeal, Instagram-worthy content",
+          "painPoints": "Difficult to find new restaurants in area, especially those with local ingredients, managing weight while eating out",
+          "goals": "Find great restaurants with quality local food, get to try every restaurant in town, find events happening in area"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Advanced Digital Graphic Design - Charity Website",
+      "type": "web-design",
+      "featured": false,
+      "year": 2026,
+      "client": "Portfolio Project",
+      "description": "Concept to create a modern Charity Website",
+      "longDescription": "The concept is to apply the principles of design and user experience to a charity website. The concept calls for a website that is attractive, intuitive, and easy to navigate.",
+      "challenge": "Creating a modern charity website that demonstrates modern design trends and best practices in UX while adhering to Keep It Simple (KIS) guidelines.",
+      "solution": "Designed a site implementing design and developement best practices, minimalist aesthetic, clear information hierarchy, intuitive navigation, and accessible design that showcases UX methodology.",
+      "results": [
+        "Professional site",
+        "UX principles demonstrated",
+        "Modern design approach",
+        "Excellent usability"
+      ],
+      "tools": ["Dreamweaver", "Adobe Illustrator", "Adobe Photoshop", "Bootstrap"],
+      "timeline": "Academic project",
+      "teamSize": 1
+    }
+  ]
+}

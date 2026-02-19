@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch for design and development inquiries.">
+    <title>Contact — Designer & Developer</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">PORTFOLIO</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="portfolio.html" class="nav-link">Work</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="contact-header">
+        <h1 class="page-title">GET IN TOUCH</h1>
+        <p class="page-subtitle">Have a project in mind? Let's talk.</p>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2 class="section-title">CONTACT INFO</h2>
+                <div class="info-block">
+                    <h3>EMAIL</h3>
+                    <p><a href="mailto:amarten1112@gmail.com">amarten1112@gmail.com</a></p>
+                </div>
+                <div class="info-block">
+                    <h3>PHONE</h3>
+                    <p><a href="tel:218-460-6328">218-460-6328</a></p>
+                </div>
+                <div class="info-block">
+                    <h3>LOCATION</h3>
+                    <p>Duluth, MN<br>Available for Remote Work</p>
+                </div>
+                <div class="info-block">
+                    <h3>SOCIAL</h3>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="info-block">
+                    <h3>AVAILABILITY</h3>
+                    <p>Currently accepting new projects. Typical response time: 24 hours.</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2 class="section-title">SEND A MESSAGE</h2>
+                <form id="contact-form" class="form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-type">Project Type *</label>
+                        <select id="project-type" name="project-type" required>
+                            <option value="">Select a project type</option>
+                            <option value="web-design">Web Design</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="print-design">Print Design</option>
+                            <option value="branding">Branding & Identity</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select a range</option>
+                            <option value="under-5k">Under $5K</option>
+                            <option value="5k-10k">$5K - $10K</option>
+                            <option value="10k-25k">$10K - $25K</option>
+                            <option value="25k-50k">$25K - $50K</option>
+                            <option value="50k-plus">$50K+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell me about your project *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="What are you working on? What are your goals?"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">Timeline</label>
+                        <select id="timeline" name="timeline">
+                            <option value="">Select a timeline</option>
+                            <option value="urgent">Urgent (ASAP)</option>
+                            <option value="1-month">1 Month</option>
+                            <option value="2-3-months">2-3 Months</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="cta-button">SEND MESSAGE</button>
+                </form>
+                <div id="form-status" class="form-status"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3 class="faq-question">What's your typical project timeline?</h3>
+                <p class="faq-answer">Project timelines vary based on scope and complexity. Small web design projects typically take 2-4 weeks, while full-stack development projects range from 6-12 weeks. We'll establish clear milestones during the discovery phase.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Do you work with agencies or only direct clients?</h3>
+                <p class="faq-answer">I work with both! I've partnered with creative agencies on larger projects and also take on direct client work. I'm flexible with collaboration structures.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What's your design process?</h3>
+                <p class="faq-answer">I follow a collaborative, iterative approach: discovery and research, strategy and ideation, design and prototyping, testing and refinement, and final implementation. You're involved at every stage.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Do you do custom development or just web design?</h3>
+                <p class="faq-answer">I specialize in both! I can handle complete end-to-end projects from design through full-stack development, or I can work as a specialist in either area depending on your needs.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What's your tech stack?</h3>
+                <p class="faq-answer">For web development, I typically work with React, Node.js, PostgreSQL, and modern JavaScript. I'm comfortable with other technologies based on project requirements and am always learning new tools.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Can you help with existing projects?</h3>
+                <p class="faq-answer">Absolutely! I take on projects to redesign websites, refactor code, improve performance, or add new features to existing applications. Let's discuss what you need.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2026 Personal Portfolio. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">GitHub</a>
+                <a href="#" class="footer-link">LinkedIn</a>
+                <a href="#" class="footer-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>

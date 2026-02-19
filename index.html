@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of a graphic designer and full-stack web developer. Experimental brutalist design with case studies in web design, web development, and print design.">
+    <meta name="theme-color" content="#F5F5F5">
+    <title>ARNOLD MARTEN Portfolio — Designer & Developer</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">PORTFOLIO</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="portfolio.html" class="nav-link">Work</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" data-parallax="0.5">
+                    DESIGN<br>+<br>DEV
+                </h1>
+                <div class="hero-subtitle" data-parallax="0.3">
+                    <p>Military Veteran | Designer | Developer | Problem Solver</p>
+                </div>
+            </div>
+            <div class="hero-metadata">
+                <span class="meta-label">GRAPHIC DESIGNER</span>
+                <span class="meta-label">WEB DESIGNER & DEVELOPER</span>
+                <span class="meta-label">FULL STACK DEVELOPER</span>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="parallax-bg" data-parallax="0.8"></div>
+            <img src="assets/images/arnie.marten.jpg" alt="Arnie Marten" class="hero-image" data-parallax="0.8">
+        </div>
+    </section>
+
+
+    <!-- Featured Work -->
+    <section class="featured-work">
+        <h2 class="section-title">FEATURED WORK</h2>
+        <div class="featured-grid">
+            <!-- Featured Project 1 (Large) -->
+            <article class="project-card featured-large clickable" data-type="print-design" data-id="1">
+                <div class="project-image" style="background-image: url('assets/images/project-1.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Magazine Typography & Layout</h3>
+                    <p class="project-type">Print Design</p>
+                    <p class="project-description">Professional print layouts for magazine articles with advanced typography and visual hierarchy.</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Featured Project 2 (Medium) -->
+            <article class="project-card featured-medium clickable" data-type="print-design" data-id="2">
+                <div class="project-image" style="background-image: url('assets/images/project-2.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Restaurant Menu & Brochure</h3>
+                    <p class="project-type">Print Design</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Featured Project 3 (Medium) -->
+            <article class="project-card featured-medium clickable" data-type="web-design" data-id="8">
+                <div class="project-image" style="background-image: url('assets/images/project-8.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Restaurant Website Design</h3>
+                    <p class="project-type">Web Design</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Featured Project 4 (Small) -->
+            <article class="project-card featured-medium clickable" data-type="branding" data-id="10">
+                <div class="project-image" style="background-image: url('assets/images/project-10.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Adv Multiplatform Design</h3>
+                    <p class="project-type">Web Design & Development</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Current Project -->
+    <section class="current-project">
+        <h2 class="section-title">IN PROGRESS</h2>
+        <article class="project-card current clickable" data-type="web-design" data-id="12">
+            <div class="project-status">ACTIVE DEVELOPMENT</div>
+            <div class="project-image" style="background: linear-gradient(135deg, #FF0000 50%, #1A1A1A 50%);"></div>
+            <div class="project-content">
+                <h3>Charity Website Developement</h3>
+                <p class="project-type">Web Design & Development</p>
+                <p class="project-description">Building a comprehensive portfolio website showcasing graphic design, web design, and development work. Features experimental brutalist design, interactive case study modals, real-time project filtering, and fully responsive layouts optimized for all devices.</p>
+                <div class="project-meta">
+                    <span class="meta">HTML5</span>
+                    <span class="meta">CSS3</span>
+                    <span class="meta">JavaScript</span>
+                    <span class="meta">Responsive Design</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>LOOKING FOR A DESIGNER & DEVELOPER?</h2>
+        <p>Let's work together on projects that challenge, inspire, and make an impact.</p>
+        <a href="contact.html" class="cta-button">LET'S TALK</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2026 Personal Portfolio. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">GitHub</a>
+                <a href="#" class="footer-link">LinkedIn</a>
+                <a href="#" class="footer-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Case Study Modal -->
+    <div class="modal" id="caseStudyModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Close case study">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content loaded dynamically by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/case-study.js"></script>
+    <script src="assets/js/filter.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Magazine Typography & Layout",
+      "type": "print-design",
+      "featured": true,
+      "year": 2023,
+      "client": "Academic Project (SNHU)",
+      "description": "Professional print layouts for magazine articles with advanced typography and visual hierarchy.",
+      "longDescription": "Designed two distinct print layouts for magazine articles featuring professional typography, image integration, and design callouts. This project demonstrated advanced skills in InDesign, layout principles, and print-ready design standards.",
+      "challenge": "Creating visually engaging magazine layouts that maintain brand consistency while showcasing complex typography and image relationships.",
+      "solution": "Developed two separate concepts with distinct visual approaches, each incorporating professional typography hierarchy, strategic image placement, and compelling callouts that draw reader attention.",
+      "results": [
+        "Professional two-page layouts",
+        "Advanced typography implementation",
+        "Strong visual hierarchy",
+        "Print-ready specifications"
+      ],
+      "tools": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
+      "timeline": "4 weeks",
+      "teamSize": 1
+    },
+    {
+      "id": 2,
+      "title": "Restaurant Menu & Brochure Design",
+      "type": "print-design",
+      "featured": true,
+      "year": 2023,
+      "client": "High-End Restaurant Concept",
+      "description": "Premium print menu and brochure design targeting affluent clientele with cultural insights and creative excellence.",
+      "longDescription": "Designed a comprehensive print menu and brochure for a high-end restaurant concept. The design needed to reflect premium positioning, incorporate cultural insights, and deliver on promises of creativity, conversation, and quality dining experience.",
+      "challenge": "Creating a cohesive print design system for restaurant materials that appeals to upscale clientele while communicating brand values of creativity, conversation, and quality.",
+      "solution": "Developed premium design aesthetic using sophisticated typography, refined color palette, and elegant layout. Incorporated cultural elements and imagery that speaks to refined dining experience while maintaining clear hierarchy for menu navigation.",
+      "results": [
+        "Premium branding execution",
+        "Clear menu hierarchy",
+        "Sophisticated visual design",
+        "Print-production ready artwork"
+      ],
+      "tools": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
+      "timeline": "5 weeks",
+      "teamSize": 1
+    },
+    {
+      "id": 3,
+      "title": "Digital Magazine (EPUB) Design",
+      "type": "digital-design",
+      "featured": true,
+      "year": 2023,
+      "client": "Magazine Publisher Concept",
+      "description": "Interactive digital magazine design in EPUB format targeting male audience 35+ with engaging interactive elements.",
+      "longDescription": "Conceptualized and designed a digital magazine in EPUB fixed layout format specifically targeting men over 35. The design focused on increasing viewership while maintaining loyal subscriber base through interactive elements and visually compelling layouts that maintain brand consistency.",
+      "challenge": "Designing a digital publication that balances brand consistency with interactive engagement while being optimized for the target demographic and various screen sizes.",
+      "solution": "Created interactive EPUB design with engaging visual hierarchy, integrated interactive elements tied to article content, professional imagery, and intuitive navigation. Design maintains strong brand identity while providing modern digital reading experience.",
+      "results": [
+        "Interactive EPUB publication",
+        "Increased visual engagement",
+        "Responsive layout design",
+        "Brand-consistent digital experience"
+      ],
+      "tools": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
+      "timeline": "6 weeks",
+      "teamSize": 1
+    },
+    {
+      "id": 4,
+      "title": "Logo & Brand Identity System",
+      "type": "branding",
+      "featured": true,
+      "year": 2023,
+      "client": "Corporate Branding Project",
+      "description": "Comprehensive logo and brand identity system utilizing design psychology principles.",
+      "longDescription": "Developed a complete logo and brand identity for a corporate client. The project involved understanding client needs, researching target audience, and applying design psychology principles to create a logo that effectively communicates the intended message to the brand's audience.",
+      "challenge": "Creating a logo that effectively communicates brand values and resonates with target audience while maintaining timeless design principles.",
+      "solution": "Conducted brand research and audience analysis, applied color psychology and visual communication principles, and developed a flexible logo system that works across multiple applications and contexts.",
+      "results": [
+        "Professional logo design",
+        "Brand psychology application",
+        "Versatile logo system",
+        "Client brand satisfaction"
+      ],
+      "tools": ["Adobe Illustrator", "Adobe Photoshop"],
+      "timeline": "4 weeks",
+      "teamSize": 1
+    },
+    {
+      "id": 5,
+      "title": "Branding Identity Design",
+      "type": "branding",
+      "featured": false,
+      "year": 2023,
+      "client": "Brand Development Project",
+      "description": "Logo and complete brand identity system incorporating design psychology for target audience communication.",
+      "longDescription": "Created a professional logo and brand identity system for a client, carefully considering client requirements and applying psychological design principles to ensure effective brand communication to the intended audience.",
+      "challenge": "Translating client vision into a cohesive brand identity that resonates with their target market.",
+      "solution": "Developed strategic brand approach incorporating design psychology, created versatile logo mark, and established brand identity guidelines for consistent application.",
+      "results": [
+        "Cohesive brand identity",
+        "Flexible logo system",
+        "Professional branding assets",
+        "Market-ready brand system"
+      ],
+      "tools": ["Adobe Illustrator", "Adobe Photoshop"],
+      "timeline": "4 weeks",
+      "teamSize": 1
+    },
+    {
+      "id": 6,
+      "title": "Logo Design & Layout Applications",
+      "type": "branding",
+      "featured": false,
+      "year": 2023,
+      "client": "Logo Design Project",
+      "description": "Logo creation with applications across multiple brand touchpoints and design system.",
+      "longDescription": "Designed a professional logo and brand identity incorporating client needs analysis and design psychology. Developed applications across print, digital, and environmental contexts.",
+      "challenge": "Creating a logo that functions effectively across diverse applications from digital media to print collateral.",
+      "solution": "Designed flexible logo system with clear guidelines for applications at various scales and on different media types.",
+      "results": [
+        "Professional logo design",
+        "Multi-application logo system",
+        "Brand consistency guidelines",
+        "Production-ready files"
+      ],
+      "tools": ["Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign"],
+      "timeline": "4 weeks",
+      "teamSize": 1
+    },
+    {
+      "id": 7,
+      "title": "Digital Advertising Campaign",
+      "type": "digital-design",
+      "featured": false,
+      "year": 2023,
+      "client": "Adventure Sports Marketing",
+      "description": "Visually compelling digital ad concepts for adventure sports with environmental storytelling.",
+      "longDescription": "Created cohesive digital advertising campaign for adventure sports promotion. The designs emphasize location-based storytelling, with background imagery reflecting actual adventure locations, maintaining consistent messaging and visual language across all ad variations.",
+      "challenge": "Creating visually appealing digital ads that communicate adventure sports messaging while maintaining consistent brand voice across variations.",
+      "solution": "Developed compelling visual design emphasizing color psychology, compositional balance, unity, and emphasis. Incorporated location-relevant background imagery that evokes adventure and outdoor experience.",
+      "results": [
+        "Professional ad designs",
+        "Strong visual cohesion",
+        "Location-based storytelling",
+        "Campaign-ready assets"
+      ],
+      "tools": ["Adobe Photoshop", "Adobe Illustrator"],
+      "timeline": "3 weeks",
+      "teamSize": 1
+    },
+    {
+      "id": 8,
+      "title": "Restaurant Website Design",
+      "type": "web-design",
+      "featured": false,
+      "year": 2023,
+      "client": "High-End Restaurant",
+      "description": "Premium, image-rich restaurant website with responsive design and intuitive navigation.",
+      "longDescription": "Designed professional website for high-end restaurant concept targeting affluent clientele. The site emphasizes the restaurant's brand positioning around creativity, conversation, and quality while providing essential information and easy navigation.",
+      "challenge": "Creating a visually stunning restaurant website that balances premium aesthetic with functional information architecture and seamless user experience.",
+      "solution": "Developed image-heavy, interactive design using client's brand colors, typography, and logo. Implemented responsive design ensuring excellent experience across desktop, tablet, and mobile. Built intuitive navigation allowing customers to easily find menus, hours, location, and contact information.",
+      "results": [
+        "Premium website design",
+        "Fully responsive layout",
+        "Intuitive navigation",
+        "Brand-consistent experience"
+      ],
+      "tools": ["Dreamweaver", "Adobe Photoshop", "Adobe Illustrator"],
+      "timeline": "6 weeks",
+      "teamSize": 1
+    },
+    {
+      "id": 9,
+      "title": "UX/Portfolio Website Design",
+      "type": "web-design",
+      "featured": false,
+      "year": 2023,
+      "client": "UX Design Portfolio Project",
+      "description": "Minimalist portfolio website applying UX principles and KIS (Keep It Simple) guidelines.",
+      "longDescription": "Developed professional portfolio website emphasizing user experience principles and Keep It Simple (KIS) design philosophy. The site balances aesthetic appeal with functional simplicity, creating an attractive, intuitive, and easy-to-navigate portfolio experience.",
+      "challenge": "Creating a portfolio site that is both visually attractive and highly usable, demonstrating UX expertise through the design itself.",
+      "solution": "Applied UX best practices including clear information hierarchy, intuitive navigation, fast load times, and accessible design. Implemented minimalist aesthetic that lets portfolio work shine while maintaining professional presentation.",
+      "results": [
+        "Professional portfolio site",
+        "Strong UX implementation",
+        "Minimalist aesthetic",
+        "High usability scores"
+      ],
+      "tools": ["Dreamweaver", "Adobe Illustrator", "Adobe Photoshop", "Bootstrap"],
+      "timeline": "5 weeks",
+      "teamSize": 1
+    },
+    {
+      "id": 10,
+      "title": "Multiplatform Adventure Store Website",
+      "type": "web-design",
+      "featured": false,
+      "year": 2023,
+      "client": "Outdoor Adventure Retail",
+      "description": "Cross-device responsive website ensuring consistent experience across all platforms and devices.",
+      "longDescription": "Designed comprehensive responsive website for outdoor adventure store with focus on consistent user experience across desktop, tablet, and mobile platforms. All elements—images, typography, forms, and navigation—maintain visual consistency and familiarity across devices.",
+      "challenge": "Creating a website that provides identical information hierarchy and user experience across vastly different screen sizes from desktop to mobile.",
+      "solution": "Implemented responsive design using modern CSS techniques, optimized images for various resolutions, and tested typography legibility at all sizes. Ensured navigation remains intuitive and touch-friendly across all devices.",
+      "results": [
+        "Responsive cross-device design",
+        "Consistent user experience",
+        "Optimized performance",
+        "Mobile-friendly interface"
+      ],
+      "tools": ["Dreamweaver", "Adobe Photoshop", "Adobe Illustrator", "Figma", "Bootstrap"],
+      "timeline": "7 weeks",
+      "teamSize": 1
+    },
+    {
+      "id": 11,
+      "title": "Restaurant Website UI/UX Case Study",
+      "type": "web-design",
+      "featured": false,
+      "year": 2023,
+      "client": "Restaurant Redesign Project",
+      "description": "Complete restaurant website redesign with user personas, UX research, and online ordering integration.",
+      "longDescription": "Comprehensive restaurant website redesign project including detailed user research, persona development, and UX implementation. The redesign focused on improving information accessibility, simplifying menu presentation, and integrating online ordering functionality while maintaining brand identity.",
+      "challenge": "Redesigning a restaurant website to address user pain points including unclear menu access, difficult reservations, and poor mobile experience while preserving brand identity.",
+      "solution": "Conducted UX research identifying three key user personas (Dan, John, Gabby), mapped user journeys, redesigned information architecture, replaced PDF menus with web-optimized content, implemented online ordering system, and optimized mobile experience. Design emphasizes clear hierarchy and easy access to key information.",
+      "results": [
+        "Improved information hierarchy",
+        "Mobile-optimized design",
+        "Online ordering integration",
+        "3 user personas mapped",
+        "Pain points resolved"
+      ],
+      "tools": ["Figma", "Adobe Photoshop", "Adobe Illustrator"],
+      "timeline": "8 weeks",
+      "teamSize": 1
+    },
+    {
+      "id": 12,
+      "title": "Current: Charity Website Development",
+      "type": "web-design",
+      "featured": false,
+      "status": "in-progress",
+      "year": 2026,
+      "client": "Personal Project",
+      "description": "Custom-built charity website showcasing graphic design, web design, and development work with experimental aesthetic.",
+      "longDescription": "Virginia Market Square currently uses Squarespace, which restricts vendor management, limits e-commerce capabilities, and incurs annual fees. This proposal recommends developing a custom website for vendor self-service, direct sales, improved oversight, and lower hosting costs ($120–$265/year), with completion targeted for this six-week capstone project. The new platform will turn Virginia Market Square into an active marketplace with advanced product discovery, self-service vendor management, and full brand control.",
+      "progress": "5% complete - Project proposal completed and approved.",
+      "tools": ["HTML5", "CSS3", "JavaScript", "VScode", "GitHub"],
+      "timeline": "Ongoing",
+      "teamSize": 1,
+      "technologies": ["HTML5", "CSS3", "Vanilla JavaScript", "Responsive Design", "Brutalist Aesthetic"]
+    },
+    {
+      "id": 13,
+      "title": "Vista Fleet Management",
+      "type": "management",
+      "featured": false,
+      "year": 2019,
+      "client": "Vista Fleet Tour Company",
+      "description": "Managed tour boat excursion company serving 700,000+ riders annually with $5M+ revenue.",
+      "longDescription": "Served as General Manager of Vista Fleet tour boat excursion company managing all operational aspects including staff, customer service, and business operations. Successfully maintained high customer satisfaction while managing seasonal workforce.",
+      "challenge": "Managing large seasonal workforce (60+ employees), maintaining consistent service quality for 700,000+ annual riders, and coordinating complex tour operations.",
+      "solution": "Implemented operational systems, trained seasonal staff, prioritized customer experience, and maintained business profitability despite seasonal variations.",
+      "results": [
+        "700,000+ annual riders",
+        "$5M+ annual revenue",
+        "60+ seasonal employees managed",
+        "Consistent service quality",
+        "High customer satisfaction"
+      ],
+      "tools": ["Project Management", "Team Leadership", "Customer Service"],
+      "timeline": "2019 - 2021",
+      "teamSize": 60
+    }
+  ]
+}

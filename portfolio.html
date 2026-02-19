@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete portfolio showcasing web design, web development, and print design projects.">
+    <title>Portfolio — All Work</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">PORTFOLIO</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Work</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section class="portfolio-header">
+        <h1 class="page-title">ALL PROJECTS</h1>
+        <p class="page-subtitle">Eleven academic projects showcasing graphic design, print design, web design, branding, and UX expertise</p>
+    </section>
+
+    <!-- Filter Controls -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web-design">Web Design</button>
+            <button class="filter-btn" data-filter="web-development">Web Development</button>
+            <button class="filter-btn" data-filter="print-design">Print Design</button>
+        </div>
+    </section>
+
+    <!-- Case Study Modal -->
+    <div class="modal" id="caseStudyModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Close case study">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content loaded dynamically by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="projects-grid" id="projects-grid">
+            <!-- Project 1: Typography -->
+            <article class="project-card project-item clickable" data-type="print-design" data-id="1">
+                <div class="project-image" style="background-image: url('assets/images/project-1.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Typography</h3>
+                    <p class="project-type">Print Design</p>
+                    <p class="project-description">Concept for magazine article layouts with advanced typography and visual hierarchy.</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Project 2: Desktop Publishing -->
+            <article class="project-card project-item clickable" data-type="print-design" data-id="2">
+                <div class="project-image" style="background-image: url('assets/images/project-2.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Desktop Publishing</h3>
+                    <p class="project-type">Print Design</p>
+                    <p class="project-description">Concept for print menu and brochure appealing to high-end clientele.</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Project 3: Digital Publishing -->
+            <article class="project-card project-item clickable" data-type="digital-design" data-id="3">
+                <div class="project-image" style="background-image: url('assets/images/project-3.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Digital Publishing</h3>
+                    <p class="project-type">Digital Design</p>
+                    <p class="project-description">Concept for digital magazine (EPUB) targeting men over 35 with interactive elements.</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Project 4: Graphics & Layout (Logo) -->
+            <article class="project-card project-item clickable" data-type="branding" data-id="4">
+                <div class="project-image" style="background-image: url('assets/images/project-4.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Graphics & Layout</h3>
+                    <p class="project-type">Branding</p>
+                    <p class="project-description">Concept for logo and branding using design psychology.</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Project 5: Branding -->
+            <article class="project-card project-item clickable" data-type="branding" data-id="5">
+                <div class="project-image" style="background-image: url('assets/images/project-5.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Branding</h3>
+                    <p class="project-type">Branding</p>
+                    <p class="project-description">Concept for logo with complete brand identity system.</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Project 6: Logo Design Layout -->
+            <article class="project-card project-item clickable" data-type="branding" data-id="6">
+                <div class="project-image" style="background-image: url('assets/images/project-6.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Logo Design Layout</h3>
+                    <p class="project-type">Branding</p>
+                    <p class="project-description">Logo with applications across multiple design touchpoints.</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Project 7: Digital Imaging -->
+            <article class="project-card project-item clickable" data-type="digital-design" data-id="7">
+                <div class="project-image" style="background-image: url('assets/images/project-7.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Digital Imaging</h3>
+                    <p class="project-type">Digital Design</p>
+                    <p class="project-description">Concepts for digital ads for adventure sports with location-based storytelling.</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Project 8: Restaurant Website -->
+            <article class="project-card project-item clickable" data-type="web-design" data-id="8">
+                <div class="project-image" style="background-image: url('assets/images/project-8.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Graphics & Layout</h3>
+                    <p class="project-type">Web Design</p>
+                    <p class="project-description">Concept for premium restaurant website with responsive design.</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Project 9: Advanced Digital Graphic Design -->
+            <article class="project-card project-item clickable" data-type="web-design" data-id="9">
+                <div class="project-image" style="background-image: url('assets/images/project-9.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Advanced Digital Graphic Design</h3>
+                    <p class="project-type">Web Design</p>
+                    <p class="project-description">UX branding portfolio website applying user experience and KIS guidelines.</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Project 10: Advanced Multiplatform Design -->
+            <article class="project-card project-item clickable" data-type="web-development" data-id="10">
+                <div class="project-image" style="background-image: url('assets/images/project-10.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>Advanced Multiplatform Design</h3>
+                    <p class="project-type">Web Development</p>
+                    <p class="project-description">Outdoor adventure store website with consistent cross-device UI/UX.</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+
+            <!-- Project 11: UI/UX Case Study -->
+            <article class="project-card project-item clickable" data-type="web-development" data-id="11">
+                <div class="project-image" style="background-image: url('assets/images/project-11.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="project-overlay">
+                    <h3>UI/UX Case Study</h3>
+                    <p class="project-type">Web Development</p>
+                    <p class="project-description">Restaurant website redesign with user personas and online ordering integration.</p>
+                    <span class="read-more">View Case Study →</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>READY TO START YOUR PROJECT?</h2>
+        <p>Let's turn your vision into reality.</p>
+        <a href="contact.html" class="cta-button">GET IN TOUCH</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2026 Personal Portfolio. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">GitHub</a>
+                <a href="#" class="footer-link">LinkedIn</a>
+                <a href="#" class="footer-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/case-study.js"></script>
+    <script src="assets/js/filter.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>
