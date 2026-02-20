@@ -768,9 +768,28 @@ section {
 }
 
 .contact-content {
+    /* use grid so info and form sit side-by-side on larger screens */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xl);
+    align-items: start; /* ensure both columns align at top */
+}
+
+/* wrapper to constrain width and mirror info block layout */
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: inherit;
+    gap: inherit;
+    align-items: inherit;
+}
+
+/* make form visually match the info panel for better balance */
+.contact-form {
+    background-color: #F0F0F0;
+    padding: var(--spacing-lg);
+    border: 2px solid var(--text-primary);
 }
 
 .contact-info {
@@ -1341,6 +1360,11 @@ section {
     }
 
     .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* also collapse the inner container on smaller viewports */
+    .contact-container {
         grid-template-columns: 1fr;
     }
 
