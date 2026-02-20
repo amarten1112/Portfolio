@@ -423,9 +423,10 @@ section {
 .project-overlay {
     position: absolute;
     inset: 0;
-    /* translucent dark overlay so image remains visible */
-    background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(3px);
+    /* darker gradient overlay for better text contrast */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6) 100%);
+    /* remove blur so text is sharp and legible */
+    backdrop-filter: none;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -447,11 +448,13 @@ section {
     font-size: 1.25rem;
     margin-bottom: var(--spacing-xs);
     font-weight: 700;
+    color: var(--text-light);
 }
 
 .project-overlay p {
     margin: var(--spacing-xs) 0;
     font-size: 0.95rem;
+    color: var(--text-light);
 }
 
 .project-description {
