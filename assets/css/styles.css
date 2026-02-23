@@ -517,6 +517,9 @@ section {
     max-width: 100%;
     background-color: var(--text-light);
     margin-top: var(--spacing-lg);
+    /* allow card to grow vertically instead of forcing square shape */
+    aspect-ratio: auto;
+    overflow: visible; /* ensure internal content is not clipped */
 }
 
 .project-card.current .project-image {
@@ -1407,6 +1410,9 @@ section {
 
     .project-card.current {
         grid-template-columns: 1fr;
+        /* remove forced square on smaller viewports */
+        aspect-ratio: auto;
+        overflow: visible;
     }
 
     .project-card.current .project-image {
