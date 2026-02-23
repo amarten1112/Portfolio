@@ -25,23 +25,32 @@ function initializeFilters() {
 
 /**
  * Filter projects based on selected category
+ * Skips animations on initial page load to prevent blank cards during scroll
  */
 function filterProjects(filterValue) {
     let visibleCount = 0;
+    const isInitialLoad = document.querySelector('.project-item.filter-visible') === null 
+                          && document.querySelector('.project-item.filter-enter') === null;
 
     projectItems.forEach((item, index) => {
         const itemType = item.dataset.type;
         const shouldShow = filterValue === 'all' || itemType === filterValue;
 
         if (shouldShow) {
-            // Stagger animation for projects coming into view
-            setTimeout(() => {
+            if (isInitialLoad) {
+                // On initial load, show items immediately without animation
                 item.style.display = '';
-                item.classList.add('filter-enter');
-                // Trigger reflow to enable animation
-                void item.offsetWidth;
                 item.classList.add('filter-visible');
-            }, visibleCount * 50); // Stagger by 50ms
+            } else {
+                // Stagger animation for projects coming into view
+                setTimeout(() => {
+                    item.style.display = '';
+                    item.classList.add('filter-enter');
+                    // Trigger reflow to enable animation
+                    void item.offsetWidth;
+                    item.classList.add('filter-visible');
+                }, visibleCount * 50); // Stagger by 50ms
+            }
 
             visibleCount++;
         } else {
@@ -100,11 +109,14 @@ function announceFilterChange(filterValue) {
 
 /**
  * Reset all filters (call on page load)
+ * Ensures all items are visible without animation
  */
 function resetFilters() {
     projectItems.forEach(item => {
         item.style.display = '';
-        item.classList.remove('filter-visible', 'filter-enter', 'filter-exit');
+        item.classList.remove('filter-exit', 'filter-enter');
+        // Keep filter-visible to ensure item stays visible
+        item.classList.add('filter-visible');
     });
 }
 

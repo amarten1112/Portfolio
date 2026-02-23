@@ -46,10 +46,11 @@ function initializeParallax() {
 
 /**
  * Initialize Intersection Observer for scroll reveal animations
+ * NOTE: Removed .project-overlay from targets to prevent interference with hover states
  */
 function initializeScrollReveal() {
     const revealElements = document.querySelectorAll(
-        '.project-card, .skill-category, .timeline-item, .faq-item, .project-overlay'
+        '.skill-category, .timeline-item, .faq-item'
     );
 
     const observerOptions = {
@@ -77,12 +78,13 @@ function initializeScrollReveal() {
 
 /**
  * Staggered reveal animation for grid items
+ * NOTE: Excluded project cards to prevent interference with filter animations
  */
 function initializeStaggeredReveal() {
-    const gridContainers = document.querySelectorAll('.featured-grid, .projects-grid, .skills-grid');
+    const gridContainers = document.querySelectorAll('.skills-grid');
 
     gridContainers.forEach(container => {
-        const items = container.querySelectorAll('[class*="project"], [class*="skill"]');
+        const items = container.querySelectorAll('[class*="skill"]');
         
         items.forEach((item, index) => {
             item.style.setProperty('--reveal-delay', `${index * 0.1}s`);

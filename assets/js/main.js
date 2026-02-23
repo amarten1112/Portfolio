@@ -192,19 +192,14 @@ function simulateFormSubmission(formData) {
 // ========================================
 
 /**
- * Add enhanced hover interactions to project cards
+ * PROJECT CARD NOTE:
+ * Hover interactions and click handlers are managed by:
+ * - CSS (styles.css): :hover state styling and transitions
+ * - case-study.js: Click event listeners for modal functionality
+ * 
+ * Removed inline JavaScript hover listeners to avoid conflicts
+ * with CSS-based hover effects and modal click handlers.
  */
-const projectCards = document.querySelectorAll('.project-card');
-
-projectCards.forEach(card => {
-    card.addEventListener('mouseenter', function() {
-        this.style.zIndex = 10;
-    });
-    
-    card.addEventListener('mouseleave', function() {
-        this.style.zIndex = 1;
-    });
-});
 
 // ========================================
 // UTILITY FUNCTIONS
