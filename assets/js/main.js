@@ -295,6 +295,29 @@ function initCurrentProjectProgress() {
 document.addEventListener('DOMContentLoaded', initCurrentProjectProgress);
 
 // ========================================
+// MOBILE STATUS TOGGLE
+// ========================================
+
+/**
+ * Toggle compact status badge to show/hide progress details on small screens
+ */
+function initStatusToggle() {
+    const toggleBtn = document.getElementById('statusToggle');
+    const progressDiv = document.querySelector('.project-progress');
+
+    if (toggleBtn && progressDiv) {
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            progressDiv.classList.toggle('expanded');
+            toggleBtn.setAttribute('aria-expanded', 
+                progressDiv.classList.contains('expanded') ? 'true' : 'false');
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', initStatusToggle);
+
+// ========================================
 // INITIALIZATION
 // ========================================
 
