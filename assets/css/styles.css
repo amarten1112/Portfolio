@@ -926,7 +926,7 @@ section {
 
 .contact-info {
     background-color: #F0F0F0;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border: 2px solid var(--text-primary);
 }
 
