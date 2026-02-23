@@ -19,7 +19,17 @@
       ],
       "tools": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
       "timeline": "Academic project",
-      "teamSize": 1
+      "teamSize": 1,
+      "images": [
+        {
+          "url": "assets/images/typography-1.jpg",
+          "caption": "Magazine layout concept - Design approach 1"
+        },
+        {
+          "url": "assets/images/typography-2.jpg",
+          "caption": "Magazine layout concept - Design approach 2"
+        }
+      ]
     },
     {
       "id": 2,
@@ -40,7 +50,17 @@
       ],
       "tools": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
       "timeline": "Academic project",
-      "teamSize": 1
+      "teamSize": 1,
+      "images": [
+        {
+          "url": "assets/images/menu-brochure-1.jpg",
+          "caption": "Restaurant menu design"
+        },
+        {
+          "url": "assets/images/menu-brochure-2.jpg",
+          "caption": "Restaurant brochure design"
+        }
+      ]
     },
     {
       "id": 3,
@@ -61,7 +81,17 @@
       ],
       "tools": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
       "timeline": "Academic project",
-      "teamSize": 1
+      "teamSize": 1,
+      "images": [
+        {
+          "url": "assets/images/digital-publishing-1.jpg",
+          "caption": "Digital magazine layout - Desktop view"
+        },
+        {
+          "url": "assets/images/digital-publishing-2.jpg",
+          "caption": "Digital magazine layout - Mobile view"
+        }
+      ]
     },
     {
       "id": 4,
@@ -82,7 +112,17 @@
       ],
       "tools": ["Adobe Illustrator", "Adobe Photoshop"],
       "timeline": "Academic project",
-      "teamSize": 1
+      "teamSize": 1,
+       "images": [
+        {
+          "url": "assets/images/logo-1.png",
+          "caption": "Logo design - Desktop view"
+        },
+        {
+          "url": "assets/images/logo-2.png",
+          "caption": "Logo design - Multiple view"
+        }
+      ]
     },
     {
       "id": 5,
@@ -103,7 +143,17 @@
       ],
       "tools": ["Adobe Illustrator", "Adobe Photoshop"],
       "timeline": "Academic project",
-      "teamSize": 1
+      "teamSize": 1,
+      "images": [
+        {
+          "url": "assets/images/branding-1.jpg",
+          "caption": "Branding design - Concept view"
+        },
+        {
+          "url": "assets/images/branding-2.jpg",
+          "caption": "Branding design - Production view"
+        }
+      ]
     },
     {
       "id": 6,
@@ -124,7 +174,17 @@
       ],
       "tools": ["Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign"],
       "timeline": "Academic project",
-      "teamSize": 1
+      "teamSize": 1,
+      "images": [
+        {
+          "url": "assets/images/logo-layout-1.png",
+          "caption": "Logo design layout - Concept view"
+        },
+        {
+          "url": "assets/images/logo-layout-2.png",
+          "caption": "Logo design layout - Production view"
+        }
+      ]
     },
     {
       "id": 7,
@@ -145,7 +205,17 @@
       ],
       "tools": ["Adobe Photoshop", "Adobe Illustrator"],
       "timeline": "Academic project",
-      "teamSize": 1
+      "teamSize": 1,
+      "images": [
+        {
+          "url": "assets/images/digital-imaging-1.png",
+          "caption": "Digital ad concept - Design approach 1"
+        },
+        {
+          "url": "assets/images/digital-imaging-2.jpg",
+          "caption": "Digital ad concept - Design approach 2"
+        }
+      ]
     },
     {
       "id": 8,
@@ -166,7 +236,17 @@
       ],
       "tools": ["Dreamweaver", "Adobe Photoshop", "Adobe Illustrator"],
       "timeline": "Academic project",
-      "teamSize": 1
+      "teamSize": 1,
+      "images": [
+        {
+          "url": "assets/images/restaurant-website-1.jpg",
+          "caption": "Restaurant website design - Desktop view"
+        },
+        {
+          "url": "assets/images/restaurant-website-2.jpg",
+          "caption": "Restaurant website design - Mobile view"
+        }
+      ]
     },
     {
       "id": 9,
@@ -187,7 +267,17 @@
       ],
       "tools": ["Dreamweaver", "Adobe Illustrator", "Adobe Photoshop", "Bootstrap"],
       "timeline": "Academic project",
-      "teamSize": 1
+      "teamSize": 1,
+      "images": [
+        {
+          "url": "assets/images/portfolio-website-1.jpg",
+          "caption": "Portfolio website design - Conceptual view"
+        },
+        {
+          "url": "assets/images/portfolio-website-2.jpg",
+          "caption": "Portfolio website design - Wireframe view"
+        }
+      ]
     },
     {
       "id": 10,
@@ -208,7 +298,17 @@
       ],
       "tools": ["Dreamweaver", "Adobe Photoshop", "Adobe Illustrator", "Figma", "Bootstrap"],
       "timeline": "Academic project",
-      "teamSize": 1
+      "teamSize": 1,
+      "images": [
+        {
+          "url": "assets/images/multiplatform-design-1.jpg",
+          "caption": "Multiplatform design - Multi view"
+        },
+        {
+          "url": "assets/images/multiplatform-design-2.jpg",
+          "caption": "Multiplatform design - Conceptual view"
+        }
+      ]
     },
     {
       "id": 11,
@@ -231,6 +331,16 @@
       "tools": ["Figma", "Adobe Photoshop", "Adobe Illustrator"],
       "timeline": "Academic project",
       "teamSize": 1,
+      "images": [
+        {
+          "url": "assets/images/ui-ux-case-study-1.png",
+          "caption": "UI/UX case study - User personas"
+        },
+        {
+          "url": "assets/images/ui-ux-case-study-2.png",
+          "caption": "UI/UX case study - User journey map"
+        }
+      ],
       "userPersonas": [
         {
           "name": "Dan",
@@ -286,7 +396,8 @@
       ],
       "tools": ["Dreamweaver", "Adobe Illustrator", "Adobe Photoshop", "Bootstrap"],
       "timeline": "Academic project",
-      "teamSize": 1
+      "teamSize": 1,
+      "images": []
     }
   ]
 }

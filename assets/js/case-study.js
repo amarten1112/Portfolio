@@ -106,6 +106,20 @@ function generateCaseStudyHTML(project) {
            </div>`
         : '';
 
+    const imagesHTML = project.images && project.images.length > 0
+        ? `<div class="case-study-section">
+             <h3>Project Showcase</h3>
+             <div class="project-images-gallery">
+               ${project.images.map((image, index) => `
+                 <div class="gallery-item">
+                   <img src="${image.url}" alt="${image.caption || `${project.title} - Image ${index + 1}`}" loading="lazy">
+                   ${image.caption ? `<p class="image-caption">${image.caption}</p>` : ''}
+                 </div>
+               `).join('')}
+             </div>
+           </div>`
+        : '';
+
     const metaHTML = `
         <div class="case-study-meta">
             <div class="meta-item">
@@ -151,6 +165,8 @@ function generateCaseStudyHTML(project) {
             </div>
 
             <div class="case-study-sections">
+                ${imagesHTML}
+
                 ${project.challenge ? `
                     <div class="case-study-section">
                         <h3>Challenge</h3>

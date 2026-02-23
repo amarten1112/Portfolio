@@ -154,7 +154,7 @@ function showFormStatus(message, type) {
 
 /**
  * Simulate form submission
- * In production, this would be a fetch request to your backend
+ * In production, this will be a fetch request to  backend
  */
 function simulateFormSubmission(formData) {
     // Log form data (in production, send to server)

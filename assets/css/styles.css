@@ -358,9 +358,9 @@ section {
     font-size: clamp(2rem, 8vw, 4rem);
     font-weight: 900;
     letter-spacing: -2px;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
     border-bottom: 2px solid var(--text-primary);
-    padding-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
 }
 
 .page-subtitle {
@@ -558,6 +558,7 @@ section {
     border-top: 1px solid #E0E0E0;
 }
 
+
 .meta {
     font-family: 'Courier New', monospace;
     font-size: 0.75rem;
@@ -573,7 +574,7 @@ section {
    ======================================== */
 
 .filter-section {
-    padding: var(--spacing-lg);
+    padding: .05em 4em .05em 4em;
     background-color: var(--bg-primary);
 }
 
@@ -628,6 +629,13 @@ section {
 /* ========================================
    ABOUT PAGE
    ======================================== */
+.about-header {
+    text-align: left;
+    margin-top: 3rem;
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--text-primary);
+    padding-bottom: var(--spacing-lg);
+}
 
 .about-bio {
     background-color: var(--bg-primary);
@@ -764,7 +772,8 @@ section {
     text-align: left;
     border-bottom: 2px solid var(--text-primary);
     padding-bottom: var(--spacing-lg);
-    margin-bottom: var(--spacing-xl);
+    margin-top: 3rem;
+    margin-bottom: var(--spacing-lg);
 }
 
 .contact-content {
@@ -781,7 +790,7 @@ section {
 /* make form visually match the info panel for better balance */
 .contact-form {
     background-color: #F0F0F0;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border: 2px solid var(--text-primary);
 }
 
@@ -1052,7 +1061,10 @@ section {
 
 .portfolio-header {
     text-align: left;
-    margin-bottom: var(--spacing-xl);
+    border-bottom: 2px solid var(--text-primary);
+    padding-bottom: var(--spacing-lg);
+    margin-top: 3rem;
+    margin-bottom: var(--spacing-lg);
 }
 
 /* ========================================
@@ -1290,6 +1302,43 @@ section {
 .clickable:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
+}
+
+/* Project Images Gallery */
+
+.project-images-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    width: 100%;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border: 2px solid var(--text-primary);
+    background-color: var(--text-light);
+    transition: all var(--transition-normal);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.image-caption {
+    padding: var(--spacing-md);
+    font-size: 0.9rem;
+    color: var(--accent-gray);
+    text-align: center;
+    margin: 0;
+    border-top: 1px solid #E0E0E0;
 }
 
 /* ========================================
@@ -1555,5 +1604,16 @@ section {
 
     .hero-content {
         margin-bottom: 0.5rem;
+    }
+}
+
+/* Desktop-only adjustments (1025px and larger) */
+@media (min-width: 1025px) {
+    .about-header {
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .contact-header {
+        margin-bottom: var(--spacing-sm);
     }
 }
