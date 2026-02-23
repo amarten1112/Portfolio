@@ -2085,7 +2085,7 @@ section {
         margin: 0 !important;
     }
 }
-}
+
 
 /* Stronger tablet-specific sizing: target typical tablet widths */
 @media (min-width: 769px) and (max-width: 1024px) {
