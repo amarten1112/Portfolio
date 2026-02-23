@@ -2118,3 +2118,29 @@ section {
         margin-bottom: var(--spacing-sm);
     }
 }
+/* ========================================*/
+/* CSS FOR FILTER ANIMATIONS*/
+/* ========================================*/
+
+/* Note: CSS for filter animations should be added to styles.css
+// Add this to your styles.css for smooth filtering:*/
+
+
+.project-item {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-item.filter-exit {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.project-item.filter-enter,
+.project-item.filter-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+.project-item.filter-enter {
+    opacity: 0;
+    transform: scale(1.05);
+}
