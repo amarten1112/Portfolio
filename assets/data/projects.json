@@ -20,6 +20,7 @@
       "tools": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
       "timeline": "Academic project",
       "teamSize": 1,
+      "heroImage": "assets/images/project-1.jpg",
       "images": [
         {
           "url": "assets/images/typography-1.jpg",
@@ -51,6 +52,7 @@
       "tools": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
       "timeline": "Academic project",
       "teamSize": 1,
+      "heroImage": "assets/images/project-2.jpg",
       "images": [
         {
           "url": "assets/images/menu-brochure-1.jpg",
@@ -82,6 +84,7 @@
       "tools": ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
       "timeline": "Academic project",
       "teamSize": 1,
+      "heroImage": "assets/images/project-3.jpg",
       "images": [
         {
           "url": "assets/images/digital-publishing-1.jpg",
@@ -113,7 +116,8 @@
       "tools": ["Adobe Illustrator", "Adobe Photoshop"],
       "timeline": "Academic project",
       "teamSize": 1,
-       "images": [
+      "heroImage": "assets/images/project-4.jpg",
+      "images": [
         {
           "url": "assets/images/logo-1.png",
           "caption": "Logo design - Desktop view"
@@ -144,6 +148,7 @@
       "tools": ["Adobe Illustrator", "Adobe Photoshop"],
       "timeline": "Academic project",
       "teamSize": 1,
+      "heroImage": "assets/images/project-5.jpg",
       "images": [
         {
           "url": "assets/images/branding-1.jpg",
@@ -175,6 +180,7 @@
       "tools": ["Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign"],
       "timeline": "Academic project",
       "teamSize": 1,
+      "heroImage": "assets/images/project-6.jpg",
       "images": [
         {
           "url": "assets/images/logo-layout-1.png",
@@ -206,6 +212,7 @@
       "tools": ["Adobe Photoshop", "Adobe Illustrator"],
       "timeline": "Academic project",
       "teamSize": 1,
+      "heroImage": "assets/images/project-7.jpg",
       "images": [
         {
           "url": "assets/images/digital-imaging-1.png",
@@ -237,6 +244,7 @@
       "tools": ["Dreamweaver", "Adobe Photoshop", "Adobe Illustrator"],
       "timeline": "Academic project",
       "teamSize": 1,
+      "heroImage": "assets/images/project-8.jpg",
       "images": [
         {
           "url": "assets/images/restaurant-website-1.jpg",
@@ -268,6 +276,7 @@
       "tools": ["Dreamweaver", "Adobe Illustrator", "Adobe Photoshop", "Bootstrap"],
       "timeline": "Academic project",
       "teamSize": 1,
+      "heroImage": "assets/images/project-9.jpg",
       "images": [
         {
           "url": "assets/images/portfolio-website-1.jpg",
@@ -299,6 +308,7 @@
       "tools": ["Dreamweaver", "Adobe Photoshop", "Adobe Illustrator", "Figma", "Bootstrap"],
       "timeline": "Academic project",
       "teamSize": 1,
+      "heroImage": "assets/images/project-10.jpg",
       "images": [
         {
           "url": "assets/images/multiplatform-design-1.jpg",
@@ -331,6 +341,7 @@
       "tools": ["Figma", "Adobe Photoshop", "Adobe Illustrator"],
       "timeline": "Academic project",
       "teamSize": 1,
+      "heroImage": "assets/images/project-11.jpg",
       "images": [
         {
           "url": "assets/images/ui-ux-case-study-1.png",
@@ -397,6 +408,7 @@
       "tools": ["Dreamweaver", "Adobe Illustrator", "Adobe Photoshop", "Bootstrap"],
       "timeline": "Academic project",
       "teamSize": 1,
+      "heroImage": "assets/images/project-12.jpg",
       "images": []
     }
   ]

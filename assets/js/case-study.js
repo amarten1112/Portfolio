@@ -147,9 +147,23 @@ function generateCaseStudyHTML(project) {
            </div>`
         : '';
 
+        // Hero image: prefer explicit heroImage, else first gallery image, else fallback by id
+        const heroSrc = project.heroImage
+                ? project.heroImage
+                : (project.images && project.images.length > 0)
+                        ? project.images[0].url
+                        : `assets/images/project-${project.id}.jpg`;
+
+        const heroAlt = project.title + ' — project hero image';
+
+        const heroHTML = `<div class="case-study-hero">
+                                                <img src="${heroSrc}" alt="${heroAlt}" loading="lazy">
+                                            </div>`;
+
     return `
         <div class="case-study">
             <h2 class="case-study-title">${project.title}</h2>
+            ${heroHTML}
             
             <div class="case-study-type">
                 ${project.status === 'in-progress' ? '<span class="status-badge">IN PROGRESS</span>' : ''}

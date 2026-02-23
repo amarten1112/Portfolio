@@ -1292,6 +1292,21 @@ section {
     padding-bottom: var(--spacing-md);
 }
 
+/* Hero image shown at top of case study modal */
+.case-study-hero {
+    margin: var(--spacing-md) 0;
+    text-align: center;
+}
+
+.case-study-hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 .case-study-type {
     display: flex;
     gap: var(--spacing-md);
