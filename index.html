@@ -109,15 +109,43 @@
         <h2 class="section-title">IN PROGRESS</h2>
         <article class="project-card current clickable" data-type="web-design" data-id="12">
             <div class="project-status">ACTIVE DEVELOPMENT
-                <span class="status-indicator"></span>
+                    <!-- progress pie + timeline -->
+                <div class="project-progress">
+                    <div class="progress-pie">
+                        <svg viewBox="0 0 36 36" class="circular-chart orange">
+                            <path class="circle-bg"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <path class="circle"
+                                stroke-dasharray="0,100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <text x="18" y="20" class="chart-text">0%</text>
+                        </svg>
+                    </div>
+                    <p class="start-date">Started: <span id="start-date"></span></p>
+                    <div class="progress-timeline">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:0%"></div>
+                        </div>
+                        <ul class="progress-steps">
+                            <li data-date="2026-03-22" title="Planning & Advanced Database Design">Plan</li>
+                            <li data-date="2026-03-29" title="Database Setup & Authentication Systems">DB</li>
+                            <li data-date="2026-04-05" title="Core Backend Pages - Products & Browsing">Backend</li>
+                            <li data-date="2026-04-12" title="Shopping Cart & Checkout System">Cart</li>
+                            <li data-date="2026-04-19" title="Frontend Design & Responsive Layout">Frontend</li>
+                            <li data-date="2026-04-26" title="E-Commerce Payment & Advanced Features">Payment</li>
+                            <li data-date="2026-05-01" title="Content, Testing & Deployment">Deploy</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
             <div class="project-image" style="background: linear-gradient(135deg, #FF0000 50%, #1A1A1A 50%);"></div>
             <div class="project-content">
                 <h3>Charity Website Development</h3>
                 <p class="project-type">Web Design & Development</p>
                 <p class="project-description">Building a comprehensive ecommerce portfolio site with experimental modern design and responsive layouts. Click to view the full case study.</p>
 
-                    <h3 class="project-meta-label">Technologies Used</h3>
+                <h3 class="project-meta-label">Technologies Used</h3>
                 <div class="project-meta">                
 
                     <span class="meta">HTML5</span>

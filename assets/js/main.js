@@ -237,6 +237,64 @@ function isInViewport(element) {
 }
 
 // ========================================
+// CURRENT PROJECT PROGRESS
+// ========================================
+
+function initCurrentProjectProgress() {
+    const container = document.querySelector('.project-progress');
+    if (!container) return;
+
+    const steps = container.querySelectorAll('.progress-steps li');
+    if (steps.length === 0) return;
+
+    const dates = Array.from(steps).map(li => new Date(li.dataset.date));
+    const now = new Date();
+    const start = dates[0];
+    const end = dates[dates.length - 1];
+    const total = end - start;
+    let percent = 0;
+    if (now <= start) {
+        percent = 0;
+    } else if (now >= end) {
+        percent = 100;
+    } else {
+        percent = ((now - start) / total) * 100;
+    }
+
+    // update linear bar if present
+    const fill = container.querySelector('.progress-fill');
+    if (fill) {
+        fill.style.width = percent + '%';
+    }
+
+    // mark completed steps
+    steps.forEach((li, i) => {
+        const d = dates[i];
+        if (now >= d) {
+            li.classList.add('complete');
+        }
+    });
+
+    // update pie chart
+    const pie = container.querySelector('.progress-pie .circle');
+    const pieText = container.querySelector('.progress-pie .chart-text');
+    if (pie && pieText) {
+        const circumference = 100; // using 100 for percentage
+        pie.setAttribute('stroke-dasharray', percent + ",100");
+        pieText.textContent = Math.round(percent) + "%";
+    }
+
+    // show start date as today
+    const startDateEl = container.querySelector('#start-date');
+    if (startDateEl) {
+        const options = { year: 'numeric', month: 'short', day: 'numeric' };
+        startDateEl.textContent = now.toLocaleDateString(undefined, options);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', initCurrentProjectProgress);
+
+// ========================================
 // INITIALIZATION
 // ========================================
 
