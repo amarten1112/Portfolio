@@ -143,8 +143,6 @@ if (contactForm) {
     });
 }
 
-function showFormStatus(message, type) {
-
 /**
  * Display form status message
  */
@@ -165,8 +163,7 @@ function showFormStatus(message, type) {
  * when the access key is created with that address at https://web3forms.com
  */
 function submitContactForm(formData) {
-    showFormStatus('Sending…', '');
-    formStatus.className = 'form-status';
+    showFormStatus('Sending…', 'sending');
 
     fetch('https://api.web3forms.com/submit', {
         method: 'POST',
