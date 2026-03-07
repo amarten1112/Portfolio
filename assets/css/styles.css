@@ -1864,6 +1864,13 @@ section {
     }
 }
 
+/* Large desktop: lock skills grid to 3 columns (2 rows × 3 cols) */
+@media (min-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* Desktop-only adjustments (1025px and larger) */
 @media (min-width: 1025px) {
     .about-header {
