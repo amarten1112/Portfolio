@@ -232,85 +232,60 @@ function isInViewport(element) {
 }
 
 // ========================================
-// CURRENT PROJECT PROGRESS
+// MOCKUP CAROUSEL
 // ========================================
 
-function initCurrentProjectProgress() {
-    const container = document.querySelector('.project-progress');
-    if (!container) return;
+function initCarousel() {
+    const track = document.getElementById('carouselTrack');
+    const prev = document.getElementById('carouselPrev');
+    const next = document.getElementById('carouselNext');
+    const dots = document.querySelectorAll('#carouselDots .dot');
 
-    const steps = container.querySelectorAll('.progress-steps li');
-    if (steps.length === 0) return;
+    if (!track || !prev || !next) return;
 
-    const dates = Array.from(steps).map(li => new Date(li.dataset.date));
-    const now = new Date();
-    const start = dates[0];
-    const end = dates[dates.length - 1];
-    const total = end - start;
-    let percent = 0;
-    if (now <= start) {
-        percent = 0;
-    } else if (now >= end) {
-        percent = 100;
-    } else {
-        percent = ((now - start) / total) * 100;
+    const slides = track.querySelectorAll('.carousel-slide');
+    const total = slides.length;
+    let current = 0;
+    let autoTimer;
+
+    function goTo(index) {
+        current = (index + total) % total;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
     }
 
-    // update linear bar if present
-    const fill = container.querySelector('.progress-fill');
-    if (fill) {
-        fill.style.width = percent + '%';
+    function startAuto() {
+        autoTimer = setInterval(() => goTo(current + 1), 4500);
     }
 
-    // mark completed steps
-    steps.forEach((li, i) => {
-        const d = dates[i];
-        if (now >= d) {
-            li.classList.add('complete');
-        }
+    function stopAuto() {
+        clearInterval(autoTimer);
+    }
+
+    prev.addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
+    next.addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => { stopAuto(); goTo(i); startAuto(); });
     });
 
-    // update pie chart
-    const pie = container.querySelector('.progress-pie .circle');
-    const pieText = container.querySelector('.progress-pie .chart-text');
-    if (pie && pieText) {
-        const circumference = 100; // using 100 for percentage
-        pie.setAttribute('stroke-dasharray', percent + ",100");
-        pieText.textContent = Math.round(percent) + "%";
-    }
+    // Touch/swipe support
+    let touchStartX = 0;
+    track.addEventListener('touchstart', e => {
+        touchStartX = e.touches[0].clientX;
+        stopAuto();
+    }, { passive: true });
+    track.addEventListener('touchend', e => {
+        const diff = touchStartX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+        startAuto();
+    });
 
-    // show start date as today
-    const startDateEl = container.querySelector('#start-date');
-    if (startDateEl) {
-        const options = { year: 'numeric', month: 'short', day: 'numeric' };
-        startDateEl.textContent = now.toLocaleDateString(undefined, options);
-    }
+    goTo(0);
+    startAuto();
 }
 
-document.addEventListener('DOMContentLoaded', initCurrentProjectProgress);
-
-// ========================================
-// MOBILE STATUS TOGGLE
-// ========================================
-
-/**
- * Toggle compact status badge to show/hide progress details on small screens
- */
-function initStatusToggle() {
-    const toggleBtn = document.getElementById('statusToggle');
-    const progressDiv = document.querySelector('.project-progress');
-
-    if (toggleBtn && progressDiv) {
-        toggleBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            progressDiv.classList.toggle('expanded');
-            toggleBtn.setAttribute('aria-expanded', 
-                progressDiv.classList.contains('expanded') ? 'true' : 'false');
-        });
-    }
-}
-
-document.addEventListener('DOMContentLoaded', initStatusToggle);
+document.addEventListener('DOMContentLoaded', initCarousel);
 
 // ========================================
 // INITIALIZATION

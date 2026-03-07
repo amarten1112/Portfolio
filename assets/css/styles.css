@@ -509,261 +509,305 @@ section {
     border-bottom: 2px solid var(--text-primary);
 }
 
-.project-card.current {
+.current-project-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
-    border: 2px solid var(--accent-red);
-    max-width: 100%;
-    background-color: var(--text-light);
     margin-top: var(--spacing-lg);
-    /* allow card to grow vertically instead of forcing square shape */
-    aspect-ratio: auto;
-    overflow: visible; /* ensure internal content is not clipped */
+    border: 2px solid var(--text-primary);
+    background-color: var(--text-light);
+    min-height: 560px;
 }
 
-.project-card.current .project-image {
-    position: relative;
-    height: 300px;
+/* --- Status Badge --- */
+.project-live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--accent-red);
+    color: var(--text-light);
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.4rem 0.9rem;
+    margin-bottom: var(--spacing-md);
+    align-self: flex-start;
 }
 
-.project-card.current:hover .project-image {
-    transform: none;
+.live-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #fff;
+    flex-shrink: 0;
+    animation: live-pulse 1.5s ease-in-out infinite;
 }
 
-.project-content {
+@keyframes live-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.75); }
+}
+
+/* --- Info Panel --- */
+.current-project-info {
     padding: var(--spacing-lg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
+    gap: var(--spacing-sm);
+    border-right: 2px solid var(--text-primary);
 }
 
-.project-status {
-    display: block;
-    width: 100%;
-    padding: var(--spacing-md) var(--spacing-lg);
-    background-color: var(--accent-red);
-    color: var(--text-light);
+.current-project-title {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
     font-weight: 700;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    margin-bottom: var(--spacing-lg);
-    text-align: center;
-    line-height: 1.6;
-    text-transform: uppercase;
-}
-
-/* progress timeline for current project */
-.project-progress {
-    margin: 0 0 var(--spacing-lg) 0;
-    padding: var(--spacing-lg) var(--spacing-md);
-    width: 100%;
-    text-align: center;
-}
-
-/* pie chart */
-.progress-pie {
-    width: 90px;
-    height: 90px;
-    margin: 0 auto var(--spacing-md);
-}
-.circular-chart {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 100%;
-}
-.circle-bg {
-    fill: none;
-    stroke: #eee;
-    stroke-width: 3.8;
-}
-.circle {
-    fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
-    transform: rotate(-90deg);
-    transform-origin: center;
-    stroke: var(--accent-red);
-}
-.chart-text {
-    font-size: 0.4em;
-    text-anchor: middle;
-    fill: var(--text-primary);
-}
-
-.start-date {
-    font-size: 0.85rem;
-    color: var(--accent-gray);
-    margin-bottom: var(--spacing-md);
-    margin-top: var(--spacing-sm);
-}
-.progress-bar {
-    background: #ddd;
-    height: 12px;
-    border-radius: 6px;
-    overflow: hidden;
-    margin: 0 auto var(--spacing-md);
-    width: 95%;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-}
-.progress-fill {
-    background: var(--accent-red);
-    height: 100%;
-    width: 0;
-    transition: width 0.6s ease-out;
-    box-shadow: 0 0 8px rgba(210, 9, 9, 0.5);
-}
-.progress-steps {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.7rem;
-    list-style: none;
-    padding: var(--spacing-md) var(--spacing-sm);
+    letter-spacing: -1px;
+    line-height: 1.1;
     margin: 0;
-
-    /* Additional constraints to fully prevent horizontal overflow */
-    .project-card.current {
-        padding-left: var(--spacing-sm);
-        padding-right: var(--spacing-sm);
-    }
-
-    .project-progress,
-    .progress-timeline,
-    .progress-bar,
-    .progress-steps {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-        overflow: visible;
-    }
-
-    .progress-steps {
-        overflow-x: auto;
-    }
-
-    .progress-steps li {
-        min-width: 28px;
-    }
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
 }
-.progress-steps li {
-    position: relative;
+
+.current-project-subtitle {
+    font-family: 'Courier New', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     color: var(--accent-gray);
+    margin: 0;
+}
+
+.current-project-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+/* --- Phase Tracker --- */
+.phase-tracker {
     flex: 1;
-    text-align: center;
-    padding: 0 var(--spacing-xs);
+    margin-top: var(--spacing-sm);
+    min-height: 0;
 }
-.progress-steps li::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #ccc;
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: background 0.3s;
+
+.phase-tracker-label {
+    font-family: 'Courier New', monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--text-primary);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.6rem;
 }
-.progress-steps li.complete {
+
+.phase-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.phase-item {
+    display: grid;
+    grid-template-columns: 1.8rem 1fr auto;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0;
+    font-size: 0.78rem;
+    border-bottom: 1px solid #eee;
+    line-height: 1.3;
+}
+
+.phase-num {
+    font-family: 'Courier New', monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #bbb;
+}
+
+.phase-name {
+    color: #888;
+    font-weight: 400;
+}
+
+.phase-dates {
+    font-family: 'Courier New', monospace;
+    font-size: 0.62rem;
+    color: #bbb;
+    white-space: nowrap;
+}
+
+.phase-item.phase-current .phase-num {
+    color: var(--accent-red);
+    font-weight: 700;
+}
+
+.phase-item.phase-current .phase-name {
     color: var(--text-primary);
-}
-.progress-steps li.complete::before {
-    background: var(--accent-red);
-    animation: step-pop 0.6s ease-out;
+    font-weight: 700;
 }
 
-@keyframes step-pop {
-    0% { transform: translateX(-50%) scale(0.6); }
-    50% { transform: translateX(-50%) scale(1.3); }
-    100% { transform: translateX(-50%) scale(1); }
+.phase-status {
+    font-family: 'Courier New', monospace;
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--accent-red);
+    background: rgba(255, 0, 0, 0.08);
+    padding: 0.15rem 0.45rem;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
-@media (max-width: 768px) {
-    .progress-steps {
-        font-size: 0.65rem;
-        width: 95%;
-        padding: var(--spacing-md) var(--spacing-xs);
-    }
-    .progress-bar {
-        width: 95%;
-    }
-}
-
-/* Make current project stack on small screens to avoid horizontal overflow */
-@media (max-width: 768px) {
-    .project-card.current {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-md);
-        padding: 0;
-    }
-
-    .project-card.current .project-image {
-        height: 220px;
-    }
-
-    .project-progress {
-        padding-left: var(--spacing-sm);
-        padding-right: var(--spacing-sm);
-        box-sizing: border-box;
-    }
-
-    .progress-timeline {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 0.5rem;
-    }
-
-    .progress-steps {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.25rem;
-        width: 100%;
-        padding: var(--spacing-sm) 0;
-    }
-
-    .progress-steps li {
-        flex: 0 0 auto;
-        min-width: 40px;
-        padding: 0 4px;
-    }
-}
-
-.progress-steps li:hover::before {
-    transform: translateX(-50%) scale(1.6);
-}
-
-/* hide linear bar when showing pie chart */
-.progress-timeline .progress-bar {
-    display: none;
-}
+/* --- Tech Tags --- */
 .project-meta {
     display: flex;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
     flex-wrap: wrap;
-    margin-top: var(--spacing-md);
+    margin-top: auto;
     padding-top: var(--spacing-md);
     border-top: 1px solid #E0E0E0;
 }
 
-
 .meta {
     font-family: 'Courier New', monospace;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: var(--spacing-xs) var(--spacing-sm);
     border: 1px solid var(--text-primary);
     background-color: var(--bg-primary);
+}
+
+/* --- Carousel --- */
+.current-project-carousel {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.carousel-viewport {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    background: #1a1a1a;
+}
+
+.carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.slide-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(26, 26, 26, 0.88);
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 1rem;
+    background: var(--text-primary);
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.carousel-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    transition: all var(--transition-quick);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+    background: var(--accent-red);
+    border-color: var(--accent-red);
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 0.45rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background var(--transition-quick);
+}
+
+.dot.active {
+    background: var(--accent-red);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    .current-project-inner {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .current-project-info {
+        border-right: none;
+        border-bottom: 2px solid var(--text-primary);
+    }
+
+    .current-project-carousel {
+        height: 420px;
+    }
+}
+
+@media (max-width: 480px) {
+    .current-project-info {
+        padding: var(--spacing-md);
+        gap: 0.5rem;
+    }
+
+    .current-project-carousel {
+        height: 340px;
+    }
+
+    .phase-item {
+        font-size: 0.72rem;
+    }
 }
 
 /* ========================================
@@ -1617,34 +1661,7 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .project-card.current {
-        grid-template-columns: 1fr;
-        /* remove forced square on smaller viewports */
-        aspect-ratio: auto;
-        overflow: visible;
-    }
-
-    .project-card.current .project-image {
-        height: 200px;
-    }
 }
-    /* Prevent status bar from overflowing due to horizontal padding */
-    .project-status {
-        box-sizing: border-box;
-        padding: var(--spacing-sm);
-        font-size: 1rem;
-        white-space: normal;
-        word-wrap: break-word;
-        overflow-wrap: anywhere;
-    }
-
-    .project-card.current .project-image {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        background-size: cover;
-        background-position: center;
-    }
 
 @media (max-width: 768px) {
     :root {
@@ -1748,57 +1765,11 @@ section {
         grid-template-columns: 1fr;
     }
 
-    /* Mobile fixes: disable hover transforms, clip overflow, and constrain image/status/timeline */
+    /* Mobile fixes: disable hover transforms on project cards */
     .project-card,
     .project-card:hover {
         transform: none !important;
         box-shadow: none !important;
-    }
-
-    .project-card.current {
-        overflow: hidden;
-        padding-left: var(--spacing-sm);
-        padding-right: var(--spacing-sm);
-    }
-
-    .project-card.current .project-image {
-        position: relative !important;
-        height: 160px;
-        width: 100%;
-        max-width: 100%;
-        left: 0;
-        top: 0;
-        transform: none !important;
-    }
-
-    .project-status {
-        padding-left: var(--spacing-sm);
-        padding-right: var(--spacing-sm);
-        box-sizing: border-box;
-        white-space: normal;
-        overflow-wrap: break-word;
-    }
-
-    .project-progress,
-    .progress-timeline,
-    .progress-bar,
-    .progress-steps {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-
-    .progress-steps {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        gap: 0.25rem;
-    }
-
-    .progress-steps li {
-        min-width: 24px;
-        padding: 0 6px;
     }
 }
 
@@ -1868,221 +1839,6 @@ section {
     .cta-button {
         padding: var(--spacing-md) var(--spacing-lg);
         font-size: 0.8rem;
-    }
-
-    /* Extra-tight mobile fixes for iPhone-size viewports to prevent any horizontal overflow */
-    .project-card.current,
-    .project-card.current * {
-        box-sizing: border-box;
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .project-card.current {
-        padding-left: var(--spacing-xs);
-        padding-right: var(--spacing-xs);
-    }
-
-    .project-status {
-        padding-left: var(--spacing-xs) !important;
-        padding-right: var(--spacing-xs) !important;
-        font-size: 1rem;
-    }
-
-    .project-progress {
-        padding: 0.5rem 0 !important;
-    }
-
-    .progress-pie {
-        width: 72px !important;
-        height: 72px !important;
-    }
-
-    .circular-chart {
-        width: 72px !important;
-        height: 72px !important;
-    }
-
-    .progress-bar {
-        width: 100% !important;
-        margin: 0 auto !important;
-    }
-
-    /* reduce step size to avoid wrapping into extra width */
-    .progress-steps li {
-        min-width: 20px !important;
-        padding: 0 4px !important;
-    }
-
-    /* ensure project image decorations don't push width */
-    .project-card.current .project-image {
-        background-size: cover !important;
-        background-position: center !important;
-        transform: none !important;
-        margin: 0 auto !important;
-        display: block !important;
-    }
-
-}
-
-/* Hide detailed visuals on small phones to prevent layout overflow */
-@media (max-width: 480px) {
-    .progress-pie {
-        display: none !important;
-        visibility: hidden !important;
-        height: 0 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    /* Replace large status with compact mobile badge */
-    .project-status {
-        background-color: transparent;
-        padding: 0 !important;
-        margin-bottom: 0.5rem !important;
-        font-size: 0.8rem !important;
-        color: var(--text-primary);
-        text-align: left;
-    }
-
-    .status-compact {
-        display: inline-block !important;
-        background-color: var(--accent-red);
-        color: var(--text-light);
-        border: none;
-        padding: 0.4rem 0.8rem;
-        font-size: 0.85rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        cursor: pointer;
-        border-radius: 4px;
-        transition: all 0.3s ease;
-    }
-
-    .status-compact:active {
-        transform: scale(0.98);
-        opacity: 0.9;
-    }
-
-    /* hide progress details by default on mobile */
-    .project-progress {
-        display: none;
-        margin-top: 0.5rem;
-    }
-
-    /* show when expanded */
-    .project-progress.expanded {
-        display: block !important;
-    }
-
-    /* show a compact timeline only - horizontal scroll */
-    .progress-timeline {
-        margin-top: 0.25rem !important;
-        padding: 0.25rem 0 !important;
-        overflow-x: auto;
-        overflow-y: visible;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .progress-steps {
-        display: flex !important;
-        flex-wrap: nowrap !important;
-        justify-content: flex-start;
-        font-size: 0.65rem;
-        list-style: none;
-        padding: 1.5rem 0 0.5rem 0 !important;
-        margin: 0 !important;
-        width: auto;
-        gap: 0.5rem;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .progress-steps li {
-        flex: 0 0 auto !important;
-        min-width: 45px !important;
-        padding: 0 !important;
-        text-align: center;
-        position: relative;
-        white-space: nowrap;
-    }
-
-    .project-content {
-        padding-top: 0.5rem !important;
-    }
-}
-
-/* Very small screens (iPhone SE and similar) — tighten text and spacing to avoid clipping */
-@media (max-width: 380px) {
-    .project-status {
-        font-size: 0.95rem !important;
-        letter-spacing: 0.6px !important;
-        padding: 0.5rem !important;
-        line-height: 1.2 !important;
-        white-space: normal !important;
-    }
-
-    .chart-text {
-        font-size: 0.34em !important;
-    }
-
-    .progress-pie {
-        width: 64px !important;
-        height: 64px !important;
-    }
-
-    .circular-chart {
-        width: 64px !important;
-        height: 64px !important;
-    }
-
-    .progress-bar {
-        height: 10px !important;
-    }
-
-    /* ensure the white progress bar doesn't show a clipped segment */
-    .progress-bar, .progress-fill {
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-    }
-}
-
-/* Emergency mobile overflow guard: hide any accidental horizontal overflow */
-@media (max-width: 480px) {
-    html, body {
-        overflow-x: hidden;
-    }
-
-    /* ensure the current project card never exceeds viewport width */
-    .project-card.current {
-        max-width: 100vw !important;
-        width: 100% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        box-sizing: border-box !important;
-        overflow-x: hidden !important;
-    }
-
-    /* make sure any internal absolutely positioned visuals are clipped */
-    .project-card.current * {
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    .project-progress,
-    .progress-timeline,
-    .progress-bar,
-    .progress-steps {
-        max-width: 100vw !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    .progress-fill {
-        margin: 0 !important;
     }
 }
 

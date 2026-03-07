@@ -107,57 +107,119 @@
     <!-- Current Project -->
     <section class="current-project">
         <h2 class="section-title">IN PROGRESS</h2>
-        <article class="project-card current clickable" data-type="web-design" data-id="12">
-            <div class="project-status">ACTIVE DEVELOPMENT
-                    <!-- progress pie + timeline -->
-                <button class="status-compact" id="statusToggle" role="button" aria-expanded="false" aria-label="Toggle project status details">
-                    ACTIVE ▼
-                </button>
-                <div class="project-progress">
-                    <div class="progress-pie">
-                        <svg viewBox="0 0 36 36" class="circular-chart orange">
-                            <path class="circle-bg"
-                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                            <path class="circle"
-                                stroke-dasharray="0,100"
-                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                            <text x="18" y="20" class="chart-text">20%</text>
-                        </svg>
-                    </div>
-                    <p class="start-date">Started: <span id="start-date"></span></p>
-                    <div class="progress-timeline">
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width:20%"></div>
+        <div class="current-project-inner">
+
+            <!-- Info Panel -->
+            <div class="current-project-info">
+                <div class="project-live-badge">
+                    <span class="live-dot"></span>
+                    ACTIVE DEVELOPMENT
+                </div>
+                <h3 class="current-project-title">Farmers Market Square</h3>
+                <p class="current-project-subtitle">E-Commerce Platform &amp; Vendor Management</p>
+                <p class="current-project-desc">Advanced multi-vendor e-commerce with role-based logins (Admin, Vendor, Customer), shopping cart, 5-step checkout, and Stripe payment integration. Built on PHP/MySQL with Bootstrap 5 frontend.</p>
+
+                <div class="phase-tracker">
+                    <div class="phase-tracker-label">PROJECT PHASES — 9 TOTAL</div>
+                    <div class="phase-list">
+                        <div class="phase-item phase-current">
+                            <span class="phase-num">01</span>
+                            <span class="phase-name">Planning &amp; DB Architecture</span>
+                            <span class="phase-status">NOW</span>
                         </div>
-                        <ul class="progress-steps">
-                            <li data-date="2026-03-13" title="Planning & Advanced Database Design">Plan</li>
-                            <li data-date="2026-03-29" title="Database Setup & Authentication Systems">DB</li>
-                            <li data-date="2026-04-05" title="Core Backend Pages - Products & Browsing">Backend</li>
-                            <li data-date="2026-04-12" title="Shopping Cart & Checkout System">Cart</li>
-                            <li data-date="2026-04-19" title="Frontend Design & Responsive Layout">Frontend</li>
-                            <li data-date="2026-04-26" title="E-Commerce Payment & Advanced Features">Payment</li>
-                            <li data-date="2026-05-01" title="Content, Testing & Deployment">Deploy</li>
-                        </ul>
+                        <div class="phase-item">
+                            <span class="phase-num">02</span>
+                            <span class="phase-name">Database &amp; Environment Setup</span>
+                            <span class="phase-dates">Mar 16</span>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-num">03</span>
+                            <span class="phase-name">User Authentication Systems</span>
+                            <span class="phase-dates">Mar 21</span>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-num">04</span>
+                            <span class="phase-name">Backend Pages &amp; API Logic</span>
+                            <span class="phase-dates">Mar 30</span>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-num">05</span>
+                            <span class="phase-name">E-Commerce Payment Integration</span>
+                            <span class="phase-dates">Apr 13</span>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-num">06</span>
+                            <span class="phase-name">Frontend &amp; Responsive Design</span>
+                            <span class="phase-dates">Apr 16</span>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-num">07</span>
+                            <span class="phase-name">JavaScript &amp; Interactivity</span>
+                            <span class="phase-dates">Apr 23</span>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-num">08</span>
+                            <span class="phase-name">Content, Images &amp; Sample Data</span>
+                            <span class="phase-dates">Apr 25</span>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-num">09</span>
+                            <span class="phase-name">Testing, Optimization &amp; Deployment</span>
+                            <span class="phase-dates">Apr 25</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="project-image" style="background-image: url('assets/images/old.virginiamarket.png'); background-size: cover; background-position: center;"></div>
-            <div class="project-content">
-                <h3>Charity Website Development</h3>
-                <p class="project-type">Web Design & Development</p>
-                <p class="project-description">Building a comprehensive ecommerce portfolio site with experimental modern design and responsive layouts. Click to view the full case study.</p>
-
-                <h3 class="project-meta-label">Technologies Used</h3>
-                <div class="project-meta">                
-
-                    <span class="meta">HTML5</span>
-                    <span class="meta">CSS3</span>
+                <div class="project-meta">
+                    <span class="meta">PHP</span>
+                    <span class="meta">MySQL</span>
+                    <span class="meta">Bootstrap 5</span>
+                    <span class="meta">Stripe API</span>
                     <span class="meta">JavaScript</span>
-                    <span class="meta">Responsive Design</span>
+                    <span class="meta">HTML5 / CSS3</span>
                 </div>
             </div>
-        </article>
+
+            <!-- Mockup Carousel -->
+            <div class="current-project-carousel">
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide">
+                            <img src="assets/images/mockup-homepage.png" alt="Homepage Design Mockup">
+                            <div class="slide-label">01 — HOMEPAGE DESIGN</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/images/mockup-product.png" alt="Product Detail Page Mockup">
+                            <div class="slide-label">02 — PRODUCT DETAIL</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/images/mockup-cart.png" alt="Shopping Cart Mockup">
+                            <div class="slide-label">03 — SHOPPING CART</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/images/mockup-checkout.png" alt="Checkout Flow Mockup">
+                            <div class="slide-label">04 — SECURE CHECKOUT</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/images/mockup-dashboard.png" alt="Vendor Dashboard Mockup">
+                            <div class="slide-label">05 — VENDOR DASHBOARD</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous slide">←</button>
+                    <div class="carousel-dots" id="carouselDots">
+                        <button class="dot active" aria-label="Slide 1"></button>
+                        <button class="dot" aria-label="Slide 2"></button>
+                        <button class="dot" aria-label="Slide 3"></button>
+                        <button class="dot" aria-label="Slide 4"></button>
+                        <button class="dot" aria-label="Slide 5"></button>
+                    </div>
+                    <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next slide">→</button>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <!-- CTA Section -->
