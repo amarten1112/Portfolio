@@ -97,54 +97,62 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ========================================
 // CONTACT FORM HANDLING
 // ========================================
+// Emails are sent via Web3Forms to amarten1112@gmail.com.
+// Get your free access key at https://web3forms.com (use that email).
 
 const contactForm = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
 
+const WEB3FORMS_ACCESS_KEY = 'YOUR_ACCESS_KEY'; // Replace with key from https://web3forms.com
+
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        
-        // Collect form data
+
+        const nameEl = document.getElementById('name');
+        const emailEl = document.getElementById('email');
         const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            company: document.getElementById('company').value,
-            projectType: document.getElementById('project-type').value,
-            budget: document.getElementById('budget').value,
-            message: document.getElementById('message').value,
-            timeline: document.getElementById('timeline').value
+            access_key: WEB3FORMS_ACCESS_KEY,
+            name: nameEl?.value?.trim() ?? '',
+            email: emailEl?.value?.trim() ?? '',
+            company: document.getElementById('company')?.value?.trim() ?? '',
+            'project-type': document.getElementById('project-type')?.value ?? '',
+            budget: document.getElementById('budget')?.value ?? '',
+            message: document.getElementById('message')?.value?.trim() ?? '',
+            timeline: document.getElementById('timeline')?.value ?? '',
+            subject: 'Portfolio contact: ' + (nameEl?.value?.trim() || 'New message')
         };
-        
-        // Validate required fields
-        if (!formData.name || !formData.email || !formData.projectType || !formData.message) {
+
+        if (!formData.name || !formData.email || !formData['project-type'] || !formData.message) {
             showFormStatus('Please fill in all required fields.', 'error');
             return;
         }
-        
-        // Validate email format
+
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(formData.email)) {
             showFormStatus('Please enter a valid email address.', 'error');
             return;
         }
-        
-        // Simulate form submission
-        // In production, this would send data to a backend server
-        simulateFormSubmission(formData);
+
+        if (WEB3FORMS_ACCESS_KEY === 'YOUR_ACCESS_KEY') {
+            showFormStatus('Form is not configured yet. Add your Web3Forms access key in assets/js/main.js.', 'error');
+            return;
+        }
+
+        submitContactForm(formData);
     });
 }
+
+function showFormStatus(message, type) {
 
 /**
  * Display form status message
  */
 function showFormStatus(message, type) {
     if (!formStatus) return;
-    
     formStatus.textContent = message;
     formStatus.className = `form-status ${type}`;
-    
-    if (type === 'success') {
+    if (type === 'success' && contactForm) {
         setTimeout(() => {
             contactForm.reset();
             formStatus.className = 'form-status';
@@ -153,38 +161,29 @@ function showFormStatus(message, type) {
 }
 
 /**
- * Simulate form submission
- * In production, this will be a fetch request to  backend
+ * Send form data to Web3Forms; emails are delivered to amarten1112@gmail.com
+ * when the access key is created with that address at https://web3forms.com
  */
-function simulateFormSubmission(formData) {
-    // Log form data (in production, send to server)
-    console.log('Form submitted:', formData);
-    
-    // Show success message
-    showFormStatus('Thanks for reaching out! I\'ll get back to you soon.', 'success');
-    
-    // Optional: Send to a backend service like Formspree, SendGrid, etc.
-    // Example with Formspree:
-    /*
-    fetch('https://formspree.io/f/YOUR_FORM_ID', {
+function submitContactForm(formData) {
+    showFormStatus('Sending…', '');
+    formStatus.className = 'form-status';
+
+    fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
     })
-    .then(response => {
-        if (response.ok) {
-            showFormStatus('Thanks for reaching out! I\'ll get back to you soon.', 'success');
-        } else {
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                showFormStatus('Thanks for reaching out! I\'ll get back to you soon.', 'success');
+            } else {
+                showFormStatus(data.message || 'Something went wrong. Please try again.', 'error');
+            }
+        })
+        .catch(() => {
             showFormStatus('Something went wrong. Please try again.', 'error');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        showFormStatus('Something went wrong. Please try again.', 'error');
-    });
-    */
+        });
 }
 
 // ========================================
