@@ -103,7 +103,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const contactForm = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
 
-const WEB3FORMS_ACCESS_KEY = 'YOUR_ACCESS_KEY'; // Replace with key from https://web3forms.com
+const WEB3FORMS_ACCESS_KEY = '1315101a-ea81-486a-88b0-70f62413b3c8';
 
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
