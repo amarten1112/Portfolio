@@ -159,7 +159,7 @@ function showFormStatus(message, type) {
 }
 
 /**
- * Send form data to Web3Forms; emails are delivered to amarten1112@gmail.com
+ * Send 1form data to Web3Forms; emails are delivered to amarten1112@gmail.com
  * when the access key is created with that address at https://web3forms.com
  */
 function submitContactForm(formData) {
