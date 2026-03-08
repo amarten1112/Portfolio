@@ -1078,9 +1078,9 @@ section {
 }
 
 .social-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-md);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-sm);
 }
 
 .social-links li {
@@ -1089,6 +1089,8 @@ section {
 }
 
 .social-links a {
+    display: block;
+    text-align: center;
     padding: var(--spacing-xs) var(--spacing-md);
     border: 1px solid var(--text-primary);
     transition: all var(--transition-quick);
@@ -1136,7 +1138,7 @@ section {
     }
 
     .social-links {
-        gap: var(--spacing-md);
+        gap: var(--spacing-sm);
     }
 
     .social-links a {
