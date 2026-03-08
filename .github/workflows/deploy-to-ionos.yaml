@@ -23,7 +23,9 @@ on:
     path:
       - ./.github/workflows/deploy-to-ionos.yaml
 
-concurrency: ${{ github.ref }}
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   deploy-to-ionos:
