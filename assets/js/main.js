@@ -111,25 +111,17 @@ if (contactForm) {
 
         const nameEl = document.getElementById('name');
         const emailEl = document.getElementById('email');
-        const formData = {
-            access_key: WEB3FORMS_ACCESS_KEY,
-            name: nameEl?.value?.trim() ?? '',
-            email: emailEl?.value?.trim() ?? '',
-            company: document.getElementById('company')?.value?.trim() ?? '',
-            'project-type': document.getElementById('project-type')?.value ?? '',
-            budget: document.getElementById('budget')?.value ?? '',
-            message: document.getElementById('message')?.value?.trim() ?? '',
-            timeline: document.getElementById('timeline')?.value ?? '',
-            subject: 'Portfolio contact: ' + (nameEl?.value?.trim() || 'New message')
-        };
+        const formData = new FormData(contactForm);
+        formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+        formData.append('subject', 'Portfolio contact: ' + (nameEl?.value?.trim() || 'New message'));
 
-        if (!formData.name || !formData.email || !formData['project-type'] || !formData.message) {
+        if (!formData.get('name') || !formData.get('email') || !formData.get('project-type') || !formData.get('message')) {
             showFormStatus('Please fill in all required fields.', 'error');
             return;
         }
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(formData.email)) {
+        if (!emailRegex.test(formData.get('email'))) {
             showFormStatus('Please enter a valid email address.', 'error');
             return;
         }
@@ -167,8 +159,7 @@ function submitContactForm(formData) {
 
     fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: formData
     })
         .then(res => res.json())
         .then(data => {
