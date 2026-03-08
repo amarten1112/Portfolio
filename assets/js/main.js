@@ -275,6 +275,46 @@ function initCarousel() {
 document.addEventListener('DOMContentLoaded', initCarousel);
 
 // ========================================
+// HERO TYPEWRITER
+// ========================================
+
+(function initHeroTyped() {
+    const el = document.getElementById('heroTyped');
+    if (!el) return;
+
+    const roles = ['DESIGNER', 'DEVELOPER', 'VETERAN', 'WEB DESIGNER', 'CREATIVE DESIGNER', 'PRINT DESIGNER', 'LOGO AND BRAND IDENTITY', 'PROBLEM SOLVER'];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    function tick() {
+        const current = roles[roleIndex];
+        if (deleting) {
+            charIndex--;
+            el.textContent = current.slice(0, charIndex);
+            if (charIndex === 0) {
+                deleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                setTimeout(tick, 400);
+                return;
+            }
+            setTimeout(tick, 55);
+        } else {
+            charIndex++;
+            el.textContent = current.slice(0, charIndex);
+            if (charIndex === current.length) {
+                deleting = true;
+                setTimeout(tick, 1800);
+                return;
+            }
+            setTimeout(tick, 100);
+        }
+    }
+
+    setTimeout(tick, 900);
+})();
+
+// ========================================
 // INITIALIZATION
 // ========================================
 
