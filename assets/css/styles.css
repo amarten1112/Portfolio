@@ -208,7 +208,7 @@ p {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: var(--spacing-xl) var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-lg);
     margin-top: 60px;
     position: relative;
     overflow: hidden;
