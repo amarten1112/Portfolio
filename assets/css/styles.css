@@ -528,7 +528,7 @@ p {
    ======================================== */
 
 section {
-    padding: var(--spacing-md) var(--spacing-md);
+    padding: var(--spacing-lg) var(--spacing-md);
     max-width: 1600px;
     margin: 0 auto;
 }
